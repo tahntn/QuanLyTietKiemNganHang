@@ -16,7 +16,7 @@ namespace QLTKNH
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmNguoiQuanLy());
+            Application.Run(new FrmKhachHang());
         }
     }
 }

@@ -11,3 +11,7 @@ D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLT
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.MDIParent1.resources
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.Form2.resources
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.frmNguoiQuanLy.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.FrmLogin.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\Guna.UI2.dll
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.FrmKhachHang.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.csproj.CopyComplete
