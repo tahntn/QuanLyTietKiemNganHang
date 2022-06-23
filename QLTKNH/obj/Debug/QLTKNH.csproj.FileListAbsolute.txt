@@ -1,0 +1,13 @@
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.csproj.AssemblyReference.cache
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.formMain.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.Properties.Resources.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.csproj.GenerateResource.cache
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.csproj.CoreCompileInputs.cache
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\QLTKNH.exe.config
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\QLTKNH.exe
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\QLTKNH.pdb
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.exe
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.pdb
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.MDIParent1.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.Form2.resources
+D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.frmNguoiQuanLy.resources
