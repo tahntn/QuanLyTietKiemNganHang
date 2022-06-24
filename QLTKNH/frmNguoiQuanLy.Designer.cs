@@ -51,7 +51,6 @@ namespace QLTKNH
             this.label3 = new System.Windows.Forms.Label();
             this.pnlPQL_data = new System.Windows.Forms.Panel();
             this.lblPQL_data = new System.Windows.Forms.Label();
-            this.picGD = new System.Windows.Forms.PictureBox();
             this.picTKTK = new System.Windows.Forms.PictureBox();
             this.picKH = new System.Windows.Forms.PictureBox();
             this.picLS = new System.Windows.Forms.PictureBox();
@@ -90,43 +89,10 @@ namespace QLTKNH
             this.btnPQL = new System.Windows.Forms.Button();
             this.picPQL = new System.Windows.Forms.PictureBox();
             this.btnTKTK = new System.Windows.Forms.Button();
-            this.btnGD = new System.Windows.Forms.Button();
             this.btnCTGD = new System.Windows.Forms.Button();
             this.picCTGD = new System.Windows.Forms.PictureBox();
             this.btnLaiSuat = new System.Windows.Forms.Button();
             this.btnKyHan = new System.Windows.Forms.Button();
-            this.grbGD = new System.Windows.Forms.GroupBox();
-            this.dataGD = new System.Windows.Forms.DataGridView();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.txtMKH_GD = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txtLGD_GD = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.txtMTK_GD = new System.Windows.Forms.ComboBox();
-            this.txtLTK_GD = new System.Windows.Forms.TextBox();
-            this.txtNGD_GD = new System.Windows.Forms.DateTimePicker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txtST_GD = new System.Windows.Forms.TextBox();
-            this.txtMGD_GD = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.btnSua_GD = new System.Windows.Forms.Button();
-            this.btnXoa_GD = new System.Windows.Forms.Button();
-            this.btnLuu_GD = new System.Windows.Forms.Button();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
-            this.btnTM_GD = new System.Windows.Forms.Button();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
             this.btnThoat = new System.Windows.Forms.Button();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.grbCTGD = new System.Windows.Forms.GroupBox();
@@ -157,6 +123,7 @@ namespace QLTKNH
             this.panel25 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.grbLS = new System.Windows.Forms.GroupBox();
+            this.dataLS = new System.Windows.Forms.DataGridView();
             this.panel22 = new System.Windows.Forms.Panel();
             this.panel27 = new System.Windows.Forms.Panel();
             this.panel28 = new System.Windows.Forms.Panel();
@@ -238,7 +205,42 @@ namespace QLTKNH
             this.btnTM_TTNQL = new System.Windows.Forms.Button();
             this.panel41 = new System.Windows.Forms.Panel();
             this.label39 = new System.Windows.Forms.Label();
-            this.dataLS = new System.Windows.Forms.DataGridView();
+            this.btnKhachHang = new System.Windows.Forms.Button();
+            this.grbKhachHang = new System.Windows.Forms.GroupBox();
+            this.dataKhachHang = new System.Windows.Forms.DataGridView();
+            this.panel44 = new System.Windows.Forms.Panel();
+            this.txtNS_KHang = new System.Windows.Forms.DateTimePicker();
+            this.panel52 = new System.Windows.Forms.Panel();
+            this.txtCCND_KHang = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.panel45 = new System.Windows.Forms.Panel();
+            this.txtDT_KHang = new System.Windows.Forms.TextBox();
+            this.panel46 = new System.Windows.Forms.Panel();
+            this.txtTKH_KHang = new System.Windows.Forms.TextBox();
+            this.panel47 = new System.Windows.Forms.Panel();
+            this.txtDC_KHang = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.panel48 = new System.Windows.Forms.Panel();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.txtEmal_KHang = new System.Windows.Forms.TextBox();
+            this.txtMKH_KHang = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.panel50 = new System.Windows.Forms.Panel();
+            this.pictureBox32 = new System.Windows.Forms.PictureBox();
+            this.pictureBox33 = new System.Windows.Forms.PictureBox();
+            this.pictureBox34 = new System.Windows.Forms.PictureBox();
+            this.btnSua_KHang = new System.Windows.Forms.Button();
+            this.btnXoa_KHang = new System.Windows.Forms.Button();
+            this.btnLuu_KHang = new System.Windows.Forms.Button();
+            this.pictureBox35 = new System.Windows.Forms.PictureBox();
+            this.btnTM_KHang = new System.Windows.Forms.Button();
+            this.panel51 = new System.Windows.Forms.Panel();
+            this.label44 = new System.Windows.Forms.Label();
+            this.picKhachHang = new System.Windows.Forms.PictureBox();
             this.grbPQL.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -248,7 +250,6 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.dataPQL)).BeginInit();
             this.panel3.SuspendLayout();
             this.pnlPQL_data.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picGD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTKTK)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKH)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLS)).BeginInit();
@@ -266,15 +267,6 @@ namespace QLTKNH
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPQL)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCTGD)).BeginInit();
-            this.grbGD.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGD)).BeginInit();
-            this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.grbCTGD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataCTGD)).BeginInit();
@@ -286,6 +278,7 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.panel25.SuspendLayout();
             this.grbLS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataLS)).BeginInit();
             this.panel22.SuspendLayout();
             this.panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
@@ -312,7 +305,16 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox30)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).BeginInit();
             this.panel41.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataLS)).BeginInit();
+            this.grbKhachHang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataKhachHang)).BeginInit();
+            this.panel44.SuspendLayout();
+            this.panel50.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).BeginInit();
+            this.panel51.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKhachHang)).BeginInit();
             this.SuspendLayout();
             // 
             // backgroundNav
@@ -554,22 +556,11 @@ namespace QLTKNH
             this.lblPQL_data.TabIndex = 3;
             this.lblPQL_data.Text = "Phòng Quản Lý";
             // 
-            // picGD
-            // 
-            this.picGD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.picGD.Image = ((System.Drawing.Image)(resources.GetObject("picGD.Image")));
-            this.picGD.Location = new System.Drawing.Point(35, 492);
-            this.picGD.Name = "picGD";
-            this.picGD.Size = new System.Drawing.Size(30, 30);
-            this.picGD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picGD.TabIndex = 4;
-            this.picGD.TabStop = false;
-            // 
             // picTKTK
             // 
             this.picTKTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
             this.picTKTK.Image = ((System.Drawing.Image)(resources.GetObject("picTKTK.Image")));
-            this.picTKTK.Location = new System.Drawing.Point(35, 430);
+            this.picTKTK.Location = new System.Drawing.Point(35, 492);
             this.picTKTK.Name = "picTKTK";
             this.picTKTK.Size = new System.Drawing.Size(30, 30);
             this.picTKTK.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -986,26 +977,13 @@ namespace QLTKNH
             this.btnTKTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
             this.btnTKTK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTKTK.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTKTK.Location = new System.Drawing.Point(0, 417);
+            this.btnTKTK.Location = new System.Drawing.Point(0, 477);
             this.btnTKTK.Name = "btnTKTK";
             this.btnTKTK.Size = new System.Drawing.Size(357, 60);
             this.btnTKTK.TabIndex = 12;
             this.btnTKTK.Text = "Tài Khoản Tiết Kiệm";
             this.btnTKTK.UseVisualStyleBackColor = false;
             this.btnTKTK.Click += new System.EventHandler(this.btnTKTK_Click);
-            // 
-            // btnGD
-            // 
-            this.btnGD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.btnGD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnGD.Location = new System.Drawing.Point(0, 477);
-            this.btnGD.Name = "btnGD";
-            this.btnGD.Size = new System.Drawing.Size(357, 60);
-            this.btnGD.TabIndex = 13;
-            this.btnGD.Text = "Giao Dịch";
-            this.btnGD.UseVisualStyleBackColor = false;
-            this.btnGD.Click += new System.EventHandler(this.btnGD_Click);
             // 
             // btnCTGD
             // 
@@ -1056,368 +1034,6 @@ namespace QLTKNH
             this.btnKyHan.Text = "Kỳ Hạn";
             this.btnKyHan.UseVisualStyleBackColor = false;
             this.btnKyHan.Click += new System.EventHandler(this.btnKyHan_Click);
-            // 
-            // grbGD
-            // 
-            this.grbGD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
-            this.grbGD.Controls.Add(this.dataGD);
-            this.grbGD.Controls.Add(this.panel7);
-            this.grbGD.Controls.Add(this.panel8);
-            this.grbGD.Controls.Add(this.panel9);
-            this.grbGD.ForeColor = System.Drawing.Color.Black;
-            this.grbGD.Location = new System.Drawing.Point(410, -8);
-            this.grbGD.Name = "grbGD";
-            this.grbGD.Size = new System.Drawing.Size(1180, 974);
-            this.grbGD.TabIndex = 8;
-            this.grbGD.TabStop = false;
-            // 
-            // dataGD
-            // 
-            this.dataGD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGD.BackgroundColor = System.Drawing.Color.White;
-            this.dataGD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGD.Location = new System.Drawing.Point(32, 574);
-            this.dataGD.Name = "dataGD";
-            this.dataGD.RowHeadersWidth = 51;
-            this.dataGD.RowTemplate.Height = 24;
-            this.dataGD.Size = new System.Drawing.Size(1133, 229);
-            this.dataGD.TabIndex = 7;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.panel13);
-            this.panel7.Controls.Add(this.panel12);
-            this.panel7.Controls.Add(this.panel11);
-            this.panel7.Controls.Add(this.panel10);
-            this.panel7.Controls.Add(this.txtMKH_GD);
-            this.panel7.Controls.Add(this.label16);
-            this.panel7.Controls.Add(this.txtLGD_GD);
-            this.panel7.Controls.Add(this.label15);
-            this.panel7.Controls.Add(this.txtMTK_GD);
-            this.panel7.Controls.Add(this.txtLTK_GD);
-            this.panel7.Controls.Add(this.txtNGD_GD);
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Controls.Add(this.label10);
-            this.panel7.Controls.Add(this.label11);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.txtST_GD);
-            this.panel7.Controls.Add(this.txtMGD_GD);
-            this.panel7.Controls.Add(this.label13);
-            this.panel7.Location = new System.Drawing.Point(32, 277);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1133, 271);
-            this.panel7.TabIndex = 6;
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.panel13.Location = new System.Drawing.Point(759, 114);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(270, 1);
-            this.panel13.TabIndex = 20;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.panel12.Location = new System.Drawing.Point(759, 55);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(270, 1);
-            this.panel12.TabIndex = 19;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.panel11.Location = new System.Drawing.Point(243, 235);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(260, 1);
-            this.panel11.TabIndex = 18;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
-            this.panel10.Location = new System.Drawing.Point(243, 60);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(260, 1);
-            this.panel10.TabIndex = 17;
-            // 
-            // txtMKH_GD
-            // 
-            this.txtMKH_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMKH_GD.FormattingEnabled = true;
-            this.txtMKH_GD.Location = new System.Drawing.Point(759, 153);
-            this.txtMKH_GD.Name = "txtMKH_GD";
-            this.txtMKH_GD.Size = new System.Drawing.Size(270, 30);
-            this.txtMKH_GD.TabIndex = 15;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.White;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(561, 100);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(180, 23);
-            this.label16.TabIndex = 14;
-            this.label16.Text = "LOẠI TIẾT KIỆM :";
-            // 
-            // txtLGD_GD
-            // 
-            this.txtLGD_GD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLGD_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLGD_GD.Location = new System.Drawing.Point(243, 215);
-            this.txtLGD_GD.Name = "txtLGD_GD";
-            this.txtLGD_GD.Size = new System.Drawing.Size(260, 22);
-            this.txtLGD_GD.TabIndex = 13;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(35, 216);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(185, 23);
-            this.label15.TabIndex = 12;
-            this.label15.Text = "LOẠI GIAO DỊCH :";
-            // 
-            // txtMTK_GD
-            // 
-            this.txtMTK_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMTK_GD.FormattingEnabled = true;
-            this.txtMTK_GD.Location = new System.Drawing.Point(243, 97);
-            this.txtMTK_GD.Name = "txtMTK_GD";
-            this.txtMTK_GD.Size = new System.Drawing.Size(260, 30);
-            this.txtMTK_GD.TabIndex = 11;
-            // 
-            // txtLTK_GD
-            // 
-            this.txtLTK_GD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtLTK_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLTK_GD.Location = new System.Drawing.Point(759, 94);
-            this.txtLTK_GD.Name = "txtLTK_GD";
-            this.txtLTK_GD.Size = new System.Drawing.Size(270, 22);
-            this.txtLTK_GD.TabIndex = 10;
-            // 
-            // txtNGD_GD
-            // 
-            this.txtNGD_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNGD_GD.Location = new System.Drawing.Point(243, 160);
-            this.txtNGD_GD.Name = "txtNGD_GD";
-            this.txtNGD_GD.Size = new System.Drawing.Size(260, 24);
-            this.txtNGD_GD.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(561, 153);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 23);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "MÃ KỲ HẠN :";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(561, 42);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 23);
-            this.label10.TabIndex = 6;
-            this.label10.Text = "SỐ TIỀN :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(35, 160);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(191, 23);
-            this.label11.TabIndex = 5;
-            this.label11.Text = "NGÀY GIAO DỊCH :";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(35, 100);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(176, 23);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "MÃ TÀI KHOẢN : ";
-            // 
-            // txtST_GD
-            // 
-            this.txtST_GD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtST_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtST_GD.Location = new System.Drawing.Point(759, 35);
-            this.txtST_GD.Name = "txtST_GD";
-            this.txtST_GD.Size = new System.Drawing.Size(270, 22);
-            this.txtST_GD.TabIndex = 3;
-            // 
-            // txtMGD_GD
-            // 
-            this.txtMGD_GD.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMGD_GD.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMGD_GD.Location = new System.Drawing.Point(243, 40);
-            this.txtMGD_GD.Name = "txtMGD_GD";
-            this.txtMGD_GD.Size = new System.Drawing.Size(260, 22);
-            this.txtMGD_GD.TabIndex = 1;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
-            this.label13.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(35, 41);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(167, 23);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "MÃ GIAO DỊCH :";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.White;
-            this.panel8.Controls.Add(this.pictureBox5);
-            this.panel8.Controls.Add(this.pictureBox6);
-            this.panel8.Controls.Add(this.pictureBox9);
-            this.panel8.Controls.Add(this.btnSua_GD);
-            this.panel8.Controls.Add(this.btnXoa_GD);
-            this.panel8.Controls.Add(this.btnLuu_GD);
-            this.panel8.Controls.Add(this.pictureBox10);
-            this.panel8.Controls.Add(this.btnTM_GD);
-            this.panel8.Location = new System.Drawing.Point(32, 125);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1133, 129);
-            this.panel8.TabIndex = 5;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(860, 50);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 12;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(618, 50);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 9;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(360, 50);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 9;
-            this.pictureBox9.TabStop = false;
-            // 
-            // btnSua_GD
-            // 
-            this.btnSua_GD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.btnSua_GD.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua_GD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnSua_GD.Location = new System.Drawing.Point(333, 33);
-            this.btnSua_GD.Name = "btnSua_GD";
-            this.btnSua_GD.Size = new System.Drawing.Size(226, 58);
-            this.btnSua_GD.TabIndex = 11;
-            this.btnSua_GD.Text = "Sửa";
-            this.btnSua_GD.UseVisualStyleBackColor = false;
-            this.btnSua_GD.Click += new System.EventHandler(this.btnSua_GD_Click);
-            // 
-            // btnXoa_GD
-            // 
-            this.btnXoa_GD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.btnXoa_GD.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa_GD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnXoa_GD.Location = new System.Drawing.Point(831, 33);
-            this.btnXoa_GD.Name = "btnXoa_GD";
-            this.btnXoa_GD.Size = new System.Drawing.Size(226, 58);
-            this.btnXoa_GD.TabIndex = 10;
-            this.btnXoa_GD.Text = "Xóa";
-            this.btnXoa_GD.UseVisualStyleBackColor = false;
-            this.btnXoa_GD.Click += new System.EventHandler(this.btnXoa_GD_Click);
-            // 
-            // btnLuu_GD
-            // 
-            this.btnLuu_GD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.btnLuu_GD.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu_GD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnLuu_GD.Location = new System.Drawing.Point(585, 33);
-            this.btnLuu_GD.Name = "btnLuu_GD";
-            this.btnLuu_GD.Size = new System.Drawing.Size(226, 58);
-            this.btnLuu_GD.TabIndex = 9;
-            this.btnLuu_GD.Text = "Lưu";
-            this.btnLuu_GD.UseVisualStyleBackColor = false;
-            this.btnLuu_GD.Click += new System.EventHandler(this.btnLuu_GD_Click);
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(113, 50);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(23, 23);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 5;
-            this.pictureBox10.TabStop = false;
-            // 
-            // btnTM_GD
-            // 
-            this.btnTM_GD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
-            this.btnTM_GD.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTM_GD.ForeColor = System.Drawing.Color.Transparent;
-            this.btnTM_GD.Location = new System.Drawing.Point(89, 33);
-            this.btnTM_GD.Name = "btnTM_GD";
-            this.btnTM_GD.Size = new System.Drawing.Size(226, 58);
-            this.btnTM_GD.TabIndex = 0;
-            this.btnTM_GD.Text = "Tạo Mới";
-            this.btnTM_GD.UseVisualStyleBackColor = false;
-            this.btnTM_GD.Click += new System.EventHandler(this.btnTM_GD_Click);
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.label14);
-            this.panel9.Location = new System.Drawing.Point(0, 22);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1223, 66);
-            this.panel9.TabIndex = 0;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label14.Location = new System.Drawing.Point(25, 14);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(158, 37);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "Giao Dịch";
             // 
             // btnThoat
             // 
@@ -1765,6 +1381,18 @@ namespace QLTKNH
             this.grbLS.TabIndex = 10;
             this.grbLS.TabStop = false;
             // 
+            // dataLS
+            // 
+            this.dataLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataLS.BackgroundColor = System.Drawing.Color.White;
+            this.dataLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataLS.Location = new System.Drawing.Point(32, 424);
+            this.dataLS.Name = "dataLS";
+            this.dataLS.RowHeadersWidth = 51;
+            this.dataLS.RowTemplate.Height = 24;
+            this.dataLS.Size = new System.Drawing.Size(1133, 379);
+            this.dataLS.TabIndex = 7;
+            // 
             // panel22
             // 
             this.panel22.BackColor = System.Drawing.Color.White;
@@ -1979,7 +1607,7 @@ namespace QLTKNH
             this.grbKH.ForeColor = System.Drawing.Color.Black;
             this.grbKH.Location = new System.Drawing.Point(410, -8);
             this.grbKH.Name = "grbKH";
-            this.grbKH.Size = new System.Drawing.Size(727, 837);
+            this.grbKH.Size = new System.Drawing.Size(1180, 974);
             this.grbKH.TabIndex = 11;
             this.grbKH.TabStop = false;
             // 
@@ -2689,17 +2317,409 @@ namespace QLTKNH
             this.label39.TabIndex = 3;
             this.label39.Text = "Thông Tin Người Quản Lý";
             // 
-            // dataLS
+            // btnKhachHang
             // 
-            this.dataLS.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataLS.BackgroundColor = System.Drawing.Color.White;
-            this.dataLS.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataLS.Location = new System.Drawing.Point(32, 424);
-            this.dataLS.Name = "dataLS";
-            this.dataLS.RowHeadersWidth = 51;
-            this.dataLS.RowTemplate.Height = 24;
-            this.dataLS.Size = new System.Drawing.Size(1133, 379);
-            this.dataLS.TabIndex = 7;
+            this.btnKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.btnKhachHang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.ForeColor = System.Drawing.Color.Transparent;
+            this.btnKhachHang.Location = new System.Drawing.Point(0, 417);
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Size = new System.Drawing.Size(357, 60);
+            this.btnKhachHang.TabIndex = 25;
+            this.btnKhachHang.Text = "Khách Hàng";
+            this.btnKhachHang.UseVisualStyleBackColor = false;
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
+            // 
+            // grbKhachHang
+            // 
+            this.grbKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(242)))), ((int)(((byte)(244)))));
+            this.grbKhachHang.Controls.Add(this.dataKhachHang);
+            this.grbKhachHang.Controls.Add(this.panel44);
+            this.grbKhachHang.Controls.Add(this.panel50);
+            this.grbKhachHang.Controls.Add(this.panel51);
+            this.grbKhachHang.ForeColor = System.Drawing.Color.Black;
+            this.grbKhachHang.Location = new System.Drawing.Point(410, -8);
+            this.grbKhachHang.Name = "grbKhachHang";
+            this.grbKhachHang.Size = new System.Drawing.Size(1180, 974);
+            this.grbKhachHang.TabIndex = 13;
+            this.grbKhachHang.TabStop = false;
+            // 
+            // dataKhachHang
+            // 
+            this.dataKhachHang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataKhachHang.BackgroundColor = System.Drawing.Color.White;
+            this.dataKhachHang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataKhachHang.Location = new System.Drawing.Point(32, 601);
+            this.dataKhachHang.Name = "dataKhachHang";
+            this.dataKhachHang.RowHeadersWidth = 51;
+            this.dataKhachHang.RowTemplate.Height = 24;
+            this.dataKhachHang.Size = new System.Drawing.Size(1133, 298);
+            this.dataKhachHang.TabIndex = 7;
+            // 
+            // panel44
+            // 
+            this.panel44.BackColor = System.Drawing.Color.White;
+            this.panel44.Controls.Add(this.txtNS_KHang);
+            this.panel44.Controls.Add(this.panel52);
+            this.panel44.Controls.Add(this.txtCCND_KHang);
+            this.panel44.Controls.Add(this.label46);
+            this.panel44.Controls.Add(this.label45);
+            this.panel44.Controls.Add(this.panel45);
+            this.panel44.Controls.Add(this.txtDT_KHang);
+            this.panel44.Controls.Add(this.panel46);
+            this.panel44.Controls.Add(this.txtTKH_KHang);
+            this.panel44.Controls.Add(this.panel47);
+            this.panel44.Controls.Add(this.txtDC_KHang);
+            this.panel44.Controls.Add(this.label36);
+            this.panel44.Controls.Add(this.label40);
+            this.panel44.Controls.Add(this.label41);
+            this.panel44.Controls.Add(this.panel48);
+            this.panel44.Controls.Add(this.panel49);
+            this.panel44.Controls.Add(this.label42);
+            this.panel44.Controls.Add(this.txtEmal_KHang);
+            this.panel44.Controls.Add(this.txtMKH_KHang);
+            this.panel44.Controls.Add(this.label43);
+            this.panel44.Location = new System.Drawing.Point(32, 277);
+            this.panel44.Name = "panel44";
+            this.panel44.Size = new System.Drawing.Size(1133, 291);
+            this.panel44.TabIndex = 6;
+            // 
+            // txtNS_KHang
+            // 
+            this.txtNS_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS_KHang.Location = new System.Drawing.Point(757, 104);
+            this.txtNS_KHang.Name = "txtNS_KHang";
+            this.txtNS_KHang.Size = new System.Drawing.Size(269, 24);
+            this.txtNS_KHang.TabIndex = 29;
+            // 
+            // panel52
+            // 
+            this.panel52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel52.Location = new System.Drawing.Point(333, 247);
+            this.panel52.Name = "panel52";
+            this.panel52.Size = new System.Drawing.Size(176, 1);
+            this.panel52.TabIndex = 28;
+            // 
+            // txtCCND_KHang
+            // 
+            this.txtCCND_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtCCND_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCCND_KHang.Location = new System.Drawing.Point(333, 223);
+            this.txtCCND_KHang.Name = "txtCCND_KHang";
+            this.txtCCND_KHang.Size = new System.Drawing.Size(176, 22);
+            this.txtCCND_KHang.TabIndex = 27;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.White;
+            this.label46.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(561, 104);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(130, 23);
+            this.label46.TabIndex = 28;
+            this.label46.Text = "NGÀY SINH :";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.White;
+            this.label45.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Black;
+            this.label45.Location = new System.Drawing.Point(41, 161);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(140, 23);
+            this.label45.TabIndex = 27;
+            this.label45.Text = "ĐIỆN THOẠI :";
+            // 
+            // panel45
+            // 
+            this.panel45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel45.Location = new System.Drawing.Point(243, 175);
+            this.panel45.Name = "panel45";
+            this.panel45.Size = new System.Drawing.Size(260, 1);
+            this.panel45.TabIndex = 26;
+            // 
+            // txtDT_KHang
+            // 
+            this.txtDT_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDT_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDT_KHang.Location = new System.Drawing.Point(243, 155);
+            this.txtDT_KHang.Name = "txtDT_KHang";
+            this.txtDT_KHang.Size = new System.Drawing.Size(260, 22);
+            this.txtDT_KHang.TabIndex = 25;
+            // 
+            // panel46
+            // 
+            this.panel46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel46.Location = new System.Drawing.Point(243, 115);
+            this.panel46.Name = "panel46";
+            this.panel46.Size = new System.Drawing.Size(260, 1);
+            this.panel46.TabIndex = 19;
+            // 
+            // txtTKH_KHang
+            // 
+            this.txtTKH_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTKH_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTKH_KHang.Location = new System.Drawing.Point(243, 95);
+            this.txtTKH_KHang.Name = "txtTKH_KHang";
+            this.txtTKH_KHang.Size = new System.Drawing.Size(260, 22);
+            this.txtTKH_KHang.TabIndex = 18;
+            // 
+            // panel47
+            // 
+            this.panel47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel47.Location = new System.Drawing.Point(759, 176);
+            this.panel47.Name = "panel47";
+            this.panel47.Size = new System.Drawing.Size(270, 1);
+            this.panel47.TabIndex = 21;
+            // 
+            // txtDC_KHang
+            // 
+            this.txtDC_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDC_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDC_KHang.Location = new System.Drawing.Point(759, 156);
+            this.txtDC_KHang.Name = "txtDC_KHang";
+            this.txtDC_KHang.Size = new System.Drawing.Size(270, 22);
+            this.txtDC_KHang.TabIndex = 20;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.White;
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.Black;
+            this.label36.Location = new System.Drawing.Point(35, 98);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(203, 23);
+            this.label36.TabIndex = 24;
+            this.label36.Text = "TÊN KHÁCH HÀNG :";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.White;
+            this.label40.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Location = new System.Drawing.Point(43, 230);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(265, 23);
+            this.label40.TabIndex = 23;
+            this.label40.Text = "CHỨNG MINH NHÂN DÂN :";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.White;
+            this.label41.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Black;
+            this.label41.Location = new System.Drawing.Point(561, 160);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(97, 23);
+            this.label41.TabIndex = 21;
+            this.label41.Text = "ĐỊA CHỈ :";
+            // 
+            // panel48
+            // 
+            this.panel48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel48.Location = new System.Drawing.Point(759, 55);
+            this.panel48.Name = "panel48";
+            this.panel48.Size = new System.Drawing.Size(270, 1);
+            this.panel48.TabIndex = 19;
+            // 
+            // panel49
+            // 
+            this.panel49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.panel49.Location = new System.Drawing.Point(243, 60);
+            this.panel49.Name = "panel49";
+            this.panel49.Size = new System.Drawing.Size(260, 1);
+            this.panel49.TabIndex = 17;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.BackColor = System.Drawing.Color.White;
+            this.label42.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.Black;
+            this.label42.Location = new System.Drawing.Point(561, 42);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(86, 23);
+            this.label42.TabIndex = 6;
+            this.label42.Text = "EMAIL :";
+            // 
+            // txtEmal_KHang
+            // 
+            this.txtEmal_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmal_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmal_KHang.Location = new System.Drawing.Point(759, 35);
+            this.txtEmal_KHang.Name = "txtEmal_KHang";
+            this.txtEmal_KHang.Size = new System.Drawing.Size(270, 22);
+            this.txtEmal_KHang.TabIndex = 3;
+            // 
+            // txtMKH_KHang
+            // 
+            this.txtMKH_KHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtMKH_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMKH_KHang.Location = new System.Drawing.Point(243, 40);
+            this.txtMKH_KHang.Name = "txtMKH_KHang";
+            this.txtMKH_KHang.Size = new System.Drawing.Size(260, 22);
+            this.txtMKH_KHang.TabIndex = 1;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.White;
+            this.label43.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.Black;
+            this.label43.Location = new System.Drawing.Point(35, 41);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(195, 23);
+            this.label43.TabIndex = 0;
+            this.label43.Text = "MÃ KHÁCH HÀNG :";
+            // 
+            // panel50
+            // 
+            this.panel50.BackColor = System.Drawing.Color.White;
+            this.panel50.Controls.Add(this.pictureBox32);
+            this.panel50.Controls.Add(this.pictureBox33);
+            this.panel50.Controls.Add(this.pictureBox34);
+            this.panel50.Controls.Add(this.btnSua_KHang);
+            this.panel50.Controls.Add(this.btnXoa_KHang);
+            this.panel50.Controls.Add(this.btnLuu_KHang);
+            this.panel50.Controls.Add(this.pictureBox35);
+            this.panel50.Controls.Add(this.btnTM_KHang);
+            this.panel50.Location = new System.Drawing.Point(32, 125);
+            this.panel50.Name = "panel50";
+            this.panel50.Size = new System.Drawing.Size(1133, 129);
+            this.panel50.TabIndex = 5;
+            // 
+            // pictureBox32
+            // 
+            this.pictureBox32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.pictureBox32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox32.Image")));
+            this.pictureBox32.Location = new System.Drawing.Point(860, 50);
+            this.pictureBox32.Name = "pictureBox32";
+            this.pictureBox32.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox32.TabIndex = 12;
+            this.pictureBox32.TabStop = false;
+            // 
+            // pictureBox33
+            // 
+            this.pictureBox33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.pictureBox33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox33.Image")));
+            this.pictureBox33.Location = new System.Drawing.Point(618, 50);
+            this.pictureBox33.Name = "pictureBox33";
+            this.pictureBox33.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox33.TabIndex = 9;
+            this.pictureBox33.TabStop = false;
+            // 
+            // pictureBox34
+            // 
+            this.pictureBox34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.pictureBox34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox34.Image")));
+            this.pictureBox34.Location = new System.Drawing.Point(360, 50);
+            this.pictureBox34.Name = "pictureBox34";
+            this.pictureBox34.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox34.TabIndex = 9;
+            this.pictureBox34.TabStop = false;
+            // 
+            // btnSua_KHang
+            // 
+            this.btnSua_KHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.btnSua_KHang.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua_KHang.ForeColor = System.Drawing.Color.Transparent;
+            this.btnSua_KHang.Location = new System.Drawing.Point(333, 33);
+            this.btnSua_KHang.Name = "btnSua_KHang";
+            this.btnSua_KHang.Size = new System.Drawing.Size(226, 58);
+            this.btnSua_KHang.TabIndex = 11;
+            this.btnSua_KHang.Text = "Sửa";
+            this.btnSua_KHang.UseVisualStyleBackColor = false;
+            this.btnSua_KHang.Click += new System.EventHandler(this.btnSua_KHang_Click);
+            // 
+            // btnXoa_KHang
+            // 
+            this.btnXoa_KHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.btnXoa_KHang.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa_KHang.ForeColor = System.Drawing.Color.Transparent;
+            this.btnXoa_KHang.Location = new System.Drawing.Point(831, 33);
+            this.btnXoa_KHang.Name = "btnXoa_KHang";
+            this.btnXoa_KHang.Size = new System.Drawing.Size(226, 58);
+            this.btnXoa_KHang.TabIndex = 10;
+            this.btnXoa_KHang.Text = "Xóa";
+            this.btnXoa_KHang.UseVisualStyleBackColor = false;
+            this.btnXoa_KHang.Click += new System.EventHandler(this.btnXoa_KHang_Click);
+            // 
+            // btnLuu_KHang
+            // 
+            this.btnLuu_KHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.btnLuu_KHang.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu_KHang.ForeColor = System.Drawing.Color.Transparent;
+            this.btnLuu_KHang.Location = new System.Drawing.Point(585, 33);
+            this.btnLuu_KHang.Name = "btnLuu_KHang";
+            this.btnLuu_KHang.Size = new System.Drawing.Size(226, 58);
+            this.btnLuu_KHang.TabIndex = 9;
+            this.btnLuu_KHang.Text = "Lưu";
+            this.btnLuu_KHang.UseVisualStyleBackColor = false;
+            this.btnLuu_KHang.Click += new System.EventHandler(this.btnLuu_KHang_Click);
+            // 
+            // pictureBox35
+            // 
+            this.pictureBox35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.pictureBox35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox35.Image")));
+            this.pictureBox35.Location = new System.Drawing.Point(113, 50);
+            this.pictureBox35.Name = "pictureBox35";
+            this.pictureBox35.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox35.TabIndex = 5;
+            this.pictureBox35.TabStop = false;
+            // 
+            // btnTM_KHang
+            // 
+            this.btnTM_KHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(172)))), ((int)(((byte)(77)))));
+            this.btnTM_KHang.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTM_KHang.ForeColor = System.Drawing.Color.Transparent;
+            this.btnTM_KHang.Location = new System.Drawing.Point(89, 33);
+            this.btnTM_KHang.Name = "btnTM_KHang";
+            this.btnTM_KHang.Size = new System.Drawing.Size(226, 58);
+            this.btnTM_KHang.TabIndex = 0;
+            this.btnTM_KHang.Text = "Tạo Mới";
+            this.btnTM_KHang.UseVisualStyleBackColor = false;
+            this.btnTM_KHang.Click += new System.EventHandler(this.btnTM_KHang_Click);
+            // 
+            // panel51
+            // 
+            this.panel51.BackColor = System.Drawing.Color.White;
+            this.panel51.Controls.Add(this.label44);
+            this.panel51.Location = new System.Drawing.Point(0, 22);
+            this.panel51.Name = "panel51";
+            this.panel51.Size = new System.Drawing.Size(1223, 66);
+            this.panel51.TabIndex = 0;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label44.Location = new System.Drawing.Point(25, 14);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(195, 37);
+            this.label44.TabIndex = 3;
+            this.label44.Text = "Khách Hàng";
+            // 
+            // picKhachHang
+            // 
+            this.picKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
+            this.picKhachHang.Image = ((System.Drawing.Image)(resources.GetObject("picKhachHang.Image")));
+            this.picKhachHang.Location = new System.Drawing.Point(35, 430);
+            this.picKhachHang.Name = "picKhachHang";
+            this.picKhachHang.Size = new System.Drawing.Size(30, 30);
+            this.picKhachHang.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picKhachHang.TabIndex = 26;
+            this.picKhachHang.TabStop = false;
             // 
             // frmNguoiQuanLy
             // 
@@ -2707,6 +2727,9 @@ namespace QLTKNH
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(44)))), ((int)(((byte)(79)))));
             this.ClientSize = new System.Drawing.Size(1570, 1055);
+            this.Controls.Add(this.picKhachHang);
+            this.Controls.Add(this.grbKhachHang);
+            this.Controls.Add(this.btnKhachHang);
             this.Controls.Add(this.grbTTNQL);
             this.Controls.Add(this.picTTNQL);
             this.Controls.Add(this.btnTTLS);
@@ -2718,15 +2741,12 @@ namespace QLTKNH
             this.Controls.Add(this.grbCTGD);
             this.Controls.Add(this.pictureBox11);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.grbGD);
             this.Controls.Add(this.picKH);
             this.Controls.Add(this.picLS);
             this.Controls.Add(this.btnKyHan);
             this.Controls.Add(this.btnLaiSuat);
             this.Controls.Add(this.picCTGD);
             this.Controls.Add(this.btnCTGD);
-            this.Controls.Add(this.picGD);
-            this.Controls.Add(this.btnGD);
             this.Controls.Add(this.picTKTK);
             this.Controls.Add(this.btnTKTK);
             this.Controls.Add(this.picPQL);
@@ -2753,7 +2773,6 @@ namespace QLTKNH
             this.panel3.PerformLayout();
             this.pnlPQL_data.ResumeLayout(false);
             this.pnlPQL_data.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picGD)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picTKTK)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picKH)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLS)).EndInit();
@@ -2774,17 +2793,6 @@ namespace QLTKNH
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picPQL)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picCTGD)).EndInit();
-            this.grbGD.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGD)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             this.grbCTGD.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataCTGD)).EndInit();
@@ -2798,6 +2806,7 @@ namespace QLTKNH
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
             this.grbLS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataLS)).EndInit();
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
             this.panel29.ResumeLayout(false);
@@ -2830,7 +2839,18 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox31)).EndInit();
             this.panel41.ResumeLayout(false);
             this.panel41.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataLS)).EndInit();
+            this.grbKhachHang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataKhachHang)).EndInit();
+            this.panel44.ResumeLayout(false);
+            this.panel44.PerformLayout();
+            this.panel50.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox35)).EndInit();
+            this.panel51.ResumeLayout(false);
+            this.panel51.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picKhachHang)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2865,7 +2885,6 @@ namespace QLTKNH
         private System.Windows.Forms.Button btnSua_PQL;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnLuu_PQL;
-        private System.Windows.Forms.PictureBox picGD;
         private System.Windows.Forms.PictureBox picTKTK;
         private System.Windows.Forms.PictureBox picKH;
         private System.Windows.Forms.PictureBox picLS;
@@ -2893,43 +2912,10 @@ namespace QLTKNH
         private System.Windows.Forms.Button btnPQL;
         private System.Windows.Forms.PictureBox picPQL;
         private System.Windows.Forms.Button btnTKTK;
-        private System.Windows.Forms.Button btnGD;
         private System.Windows.Forms.Button btnCTGD;
         private System.Windows.Forms.PictureBox picCTGD;
         private System.Windows.Forms.Button btnLaiSuat;
         private System.Windows.Forms.Button btnKyHan;
-        private System.Windows.Forms.GroupBox grbGD;
-        private System.Windows.Forms.DataGridView dataGD;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.ComboBox txtMKH_GD;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtLGD_GD;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.ComboBox txtMTK_GD;
-        private System.Windows.Forms.TextBox txtLTK_GD;
-        private System.Windows.Forms.DateTimePicker txtNGD_GD;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtST_GD;
-        private System.Windows.Forms.TextBox txtMGD_GD;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Button btnSua_GD;
-        private System.Windows.Forms.Button btnXoa_GD;
-        private System.Windows.Forms.Button btnLuu_GD;
-        private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Button btnTM_GD;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Panel panel16;
@@ -3047,5 +3033,41 @@ namespace QLTKNH
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.TextBox txtTQL_TTNQL;
         private System.Windows.Forms.DataGridView dataLS;
+        private System.Windows.Forms.Button btnKhachHang;
+        private System.Windows.Forms.GroupBox grbKhachHang;
+        private System.Windows.Forms.DataGridView dataKhachHang;
+        private System.Windows.Forms.Panel panel44;
+        private System.Windows.Forms.Panel panel52;
+        private System.Windows.Forms.TextBox txtCCND_KHang;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Panel panel45;
+        private System.Windows.Forms.TextBox txtDT_KHang;
+        private System.Windows.Forms.Panel panel46;
+        private System.Windows.Forms.TextBox txtTKH_KHang;
+        private System.Windows.Forms.Panel panel47;
+        private System.Windows.Forms.TextBox txtDC_KHang;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel panel48;
+        private System.Windows.Forms.Panel panel49;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.TextBox txtEmal_KHang;
+        private System.Windows.Forms.TextBox txtMKH_KHang;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Panel panel50;
+        private System.Windows.Forms.PictureBox pictureBox32;
+        private System.Windows.Forms.PictureBox pictureBox33;
+        private System.Windows.Forms.PictureBox pictureBox34;
+        private System.Windows.Forms.Button btnSua_KHang;
+        private System.Windows.Forms.Button btnXoa_KHang;
+        private System.Windows.Forms.Button btnLuu_KHang;
+        private System.Windows.Forms.PictureBox pictureBox35;
+        private System.Windows.Forms.Button btnTM_KHang;
+        private System.Windows.Forms.Panel panel51;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.DateTimePicker txtNS_KHang;
+        private System.Windows.Forms.PictureBox picKhachHang;
     }
 }

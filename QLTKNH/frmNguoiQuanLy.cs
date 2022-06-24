@@ -19,61 +19,83 @@ namespace QLTKNH
 
         ketnoi kn = new ketnoi();
 
-        private void frmNguoiQuanLy_Load(object sender, EventArgs e)
+
+        private void visibleGrb()
         {
+            grbKhachHang.Visible = false;
             grbTTNQL.Visible = false;
             grbPQL.Visible = false;
             grbTKTK.Visible = false;
-            grbGD.Visible = false;
             grbCTGD.Visible = false;
             grbLS.Visible = false;
             grbKH.Visible = false;
+        }
 
+        private void visibleBtn()
+        {
+            btnKhachHang.Visible = false;
             btnTTNQL.Visible = false;
             btnPQL.Visible = false;
             btnTKTK.Visible = false;
-            btnGD.Visible = false;
+           
             btnCTGD.Visible = false;
             btnLaiSuat.Visible = false;
             btnKyHan.Visible = false;
 
+            picKhachHang.Visible = false;
             picTTNQL.Visible = false;
             picPQL.Visible = false;
             picTKTK.Visible = false;
-            picGD.Visible = false;
+            
             picCTGD.Visible = false;
             picKH.Visible = false;
             picLS.Visible = false;
+        }
+
+        private void btnTrans()
+        {
+            btnKhachHang.BackColor = Color.FromArgb(24, 44, 79);
+            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
+            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
+            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
+          
+            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
+            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
+            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
+
+
+
+            picKhachHang.BackColor = Color.FromArgb(24, 44, 79);
+            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
+            picPQL.BackColor = Color.FromArgb(24, 44, 79);
+            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
+           
+            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
+            picKH.BackColor = Color.FromArgb(24, 44, 79);
+            picLS.BackColor = Color.FromArgb(24, 44, 79);
+        }
+
+
+
+
+        private void frmNguoiQuanLy_Load(object sender, EventArgs e)
+        {
+            visibleGrb();
+            visibleBtn();
+           
 
         }
         //button Thông tin người quản lý
 
         private void btnTTNQL_Click(object sender, EventArgs e)
         {
+            visibleGrb();
             grbTTNQL.Visible =true;
-            grbPQL.Visible = true;
-            grbTKTK.Visible = false;
-            grbGD.Visible = false;
-            grbCTGD.Visible = false;
-            grbLS.Visible = false;
-            grbKH.Visible = false;
 
+            btnTrans();
             btnTTNQL.BackColor = Color.FromArgb(26, 154, 254);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-
             picTTNQL.BackColor = Color.FromArgb(26, 154, 254);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
+            
 
             LAYBANG_TTNQL();
         }
@@ -82,133 +104,58 @@ namespace QLTKNH
 
         private void btnPQL_Click(object sender, EventArgs e)
         {
-            grbTTNQL.Visible = false;
+            visibleGrb();
             grbPQL.Visible = true;
-            grbTKTK.Visible = false;
-            grbGD.Visible = false;
-            grbCTGD.Visible = false;
-            grbLS.Visible = false;
-            grbKH.Visible = false;
 
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(26, 154, 254);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
+            btnTrans();
+            btnPQL.BackColor = Color.FromArgb(26, 154, 254);         
             picPQL.BackColor = Color.FromArgb(26, 154, 254);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
-
-
-
 
             LAYBANG_PHONGQUANLY();
+        }
+
+        //button Khách Hàng 
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+            visibleGrb();
+            grbKhachHang.Visible = true;
+
+
+            btnTrans();
+            btnKhachHang.BackColor = Color.FromArgb(26, 154, 254);
+            picKhachHang.BackColor = Color.FromArgb(26, 154, 254);
+
+            LAYBANG_KhachHang();
         }
 
         // button Tài khoán tiết kiệm
 
         private void btnTKTK_Click(object sender, EventArgs e)
         {
-            grbTTNQL.Visible = false;
-            grbPQL.Visible = false;
+            visibleGrb();
             grbTKTK.Visible = true;
-            grbGD.Visible = false;
-            grbCTGD.Visible = false;
-            grbLS.Visible = false;
-            grbKH.Visible = false;
 
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(26, 154, 254);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
+            btnTrans();   
+            btnTKTK.BackColor = Color.FromArgb(26, 154, 254);        
             picTKTK.BackColor = Color.FromArgb(26, 154, 254);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
-
 
             LAYBANG_TKTK();
             LAYBANG_KH_TKTK();
         }
 
-        //button Giao Dịch
-
-        private void btnGD_Click(object sender, EventArgs e)
-        {
-
-            grbTTNQL.Visible = false;
-            grbPQL.Visible = false;
-            grbTKTK.Visible = false;
-            grbGD.Visible = true;
-            grbCTGD.Visible = false;
-            grbLS.Visible = false;
-            grbKH.Visible = false;
-
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(26, 154, 254);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(26, 154, 254);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
-
-
-            LAYBANG_GD();
-            LAYBANG_KH_GD();
-            LAYBANG_TKTK_GD();
-        }
 
 
         //button Chi tiết giao dịch
 
         private void btnCTGD_Click(object sender, EventArgs e)
         {
-            grbTTNQL.Visible = false;
-            grbPQL.Visible = false;
-            grbTKTK.Visible = false;
-            grbGD.Visible = false;
+            visibleGrb();
             grbCTGD.Visible = true;
-            grbLS.Visible = false;
-            grbKH.Visible = false;
 
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(26, 154, 254);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
+            btnTrans();     
+            btnCTGD.BackColor = Color.FromArgb(26, 154, 254);           
             picCTGD.BackColor = Color.FromArgb(26, 154, 254);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
-
 
             LAYBANG_CTGD();
             LAYBANG_KH_CTGD();
@@ -219,28 +166,11 @@ namespace QLTKNH
 
         private void btnLaiSuat_Click(object sender, EventArgs e)
         {
-            grbTTNQL.Visible = false;
-            grbPQL.Visible = false;
-            grbTKTK.Visible = false;
-            grbGD.Visible = false;
-            grbCTGD.Visible = false;
+            visibleGrb();
             grbLS.Visible = true;
-            grbKH.Visible = false;
 
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
+            btnTrans();
             btnLaiSuat.BackColor = Color.FromArgb(26, 154, 254);
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
             picLS.BackColor = Color.FromArgb(26, 154, 254);
 
             LAYBANG_LS();
@@ -250,30 +180,12 @@ namespace QLTKNH
         //button Kỳ Hạn
         private void btnKyHan_Click(object sender, EventArgs e)
         {
-            grbTTNQL.Visible = false;
-            grbPQL.Visible = false;
-            grbTKTK.Visible = false;
-            grbGD.Visible = false;
-            grbCTGD.Visible = false;
-            grbLS.Visible = false;
+            visibleGrb();
             grbKH.Visible = true;
 
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnPQL.BackColor = Color.FromArgb(24, 44, 79);
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(26, 154, 254);
-            btnLaiSuat.BackColor = Color.FromArgb(24, 44, 79);
-
-
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picPQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
+            btnTrans();       
+            btnKyHan.BackColor = Color.FromArgb(26, 154, 254);        
             picKH.BackColor = Color.FromArgb(26, 154, 254);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
 
             LAYBANG_KH();
             LAYBANG_TTNQL_KH();
@@ -388,6 +300,78 @@ namespace QLTKNH
             kn.Execute("INSERT INTO PHONG Values ('" + txtMP_PQL.Text + "','" + txtTP_PQL.Text +"')");
             LAYBANG_PHONGQUANLY();
         }
+        //-------------------------------------------------//
+
+
+        //Khách Hàng
+
+        public void LAYBANG_KhachHang()
+        {
+
+            DataTable data = new DataTable();
+            data = kn.Lay_Dulieu("Select * From  KHACHHANG");
+            dataKhachHang.DataSource = data;
+            Hienthi_Dulieu_KhachHang();
+        }
+
+        private void Hienthi_Dulieu_KhachHang()
+        {
+            txtMKH_KHang.DataBindings.Clear();
+            txtMKH_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "MAKH");
+
+            txtTKH_KHang.DataBindings.Clear();
+            txtTKH_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "TENKH");
+
+            txtDT_KHang.DataBindings.Clear();
+            txtDT_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "DIENTHOAIKH");
+
+            txtCCND_KHang.DataBindings.Clear();
+            txtCCND_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "CMND");
+
+            txtDC_KHang.DataBindings.Clear();
+            txtDC_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "DIACHI");
+
+            txtEmal_KHang.DataBindings.Clear();
+            txtEmal_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "MAIL");
+
+            txtNS_KHang.DataBindings.Clear();
+            txtNS_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "NGAYSINH");
+
+        }
+
+        private void btnTM_KHang_Click(object sender, EventArgs e)
+        {
+            txtMKH_KHang.Text = "";
+            txtTKH_KHang.Text = "";
+            txtDC_KHang.Text = "";
+            txtNS_KHang.Text = "";
+            txtEmal_KHang.Text = "";
+            txtDT_KHang.Text = "";
+            txtCCND_KHang.Text = "";
+
+            txtMKH_KHang.Focus();
+        }
+
+        private void btnSua_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("Update KHACHHANG SET TENKH = '" + txtTKH_KHang.Text + "', DIACHI ='" + txtDC_KHang.Text + "', NGAYSINH = '" + txtNS_KHang.Value + "', CMND ='" + txtCCND_KHang.Text + "', DIENTHOAIKH ='" + txtDT_KHang.Text + "', MAIL ='" +txtEmal_KHang.Text + "' where MAKH = '" + txtMKH_KHang.Text + "'");
+
+            LAYBANG_KhachHang();
+        }
+
+        private void btnLuu_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("INSERT INTO KHACHHANG  Values ('" + txtMKH_KHang.Text + "','" +txtTKH_KHang.Text + "','" + txtCCND_KHang.Text + "','" + txtNS_KHang.Value + "','" + txtDC_KHang.Text + "','" + txtDT_KHang.Text + "','" + txtEmal_KHang.Text + "')");
+
+            LAYBANG_KhachHang();
+        }
+
+        private void btnXoa_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("Delete KHACHHANG where MAKH = '" + txtMKH_KHang.Text + "'");
+            LAYBANG_KhachHang();
+        }
+
 
 
 
@@ -461,91 +445,7 @@ namespace QLTKNH
             LAYBANG_TKTK();
         }
 
-        //---------------------------------------//
-
-        //Giao dịch
-
-        public void LAYBANG_GD()
-        {
-            DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  GIAODICH");
-            dataGD.DataSource = data;
-            Hienthi_Dulieu_GD();
-        }
-
-        public void LAYBANG_TKTK_GD()
-        {
-            DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  TAIKHOANTIETKIEM");
-            txtMTK_GD.DataSource = data;
-            txtMTK_GD.DisplayMember = "MATK";
-            txtMTK_GD.ValueMember = "MATK";    
-        }
-
-        public void LAYBANG_KH_GD()
-        {
-            DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From KYHAN");
-            txtMKH_GD.DataSource = data;
-            txtMKH_GD.DisplayMember = "MAKYHAN";
-            txtMKH_GD.ValueMember = "MAKYHAN";
-        }
-
-        private void Hienthi_Dulieu_GD()
-        {
-            txtMGD_GD.DataBindings.Clear();
-            txtMGD_GD.DataBindings.Add("Text", dataGD.DataSource, "MAGD");
-
-            txtMTK_GD.DataBindings.Clear();
-            txtMTK_GD.DataBindings.Add("Text", dataGD.DataSource, "MATK");
-
-            txtNGD_GD.DataBindings.Clear();
-            txtNGD_GD.DataBindings.Add("Text", dataGD.DataSource, "NGAYGD");
-
-            txtLGD_GD.DataBindings.Clear();
-            txtLGD_GD.DataBindings.Add("Text", dataGD.DataSource, "LOAIGD");
-
-
-            txtST_GD.DataBindings.Clear();
-            txtST_GD.DataBindings.Add("Text", dataGD.DataSource, "SOTIEN");
-
-            txtLTK_GD.DataBindings.Clear();
-            txtLTK_GD.DataBindings.Add("Text", dataGD.DataSource, "LOAITIETKIEM");
-
-            txtMKH_GD.DataBindings.Clear();
-            txtMKH_GD.DataBindings.Add("Text", dataGD.DataSource, "MAKYHAN");
-        }
-
-        private void btnTM_GD_Click(object sender, EventArgs e)
-        {
-            txtMGD_GD.Text = "";
-            txtMTK_GD.Text = "";
-            txtNGD_GD.Text = "";
-            txtLGD_GD.Text = "";
-            txtST_GD.Text = "";
-            txtLTK_GD.Text = "";
-            txtMKH_GD.Text = "";
-
-            txtMGD_GD.Focus();
-        }
-
-        private void btnSua_GD_Click(object sender, EventArgs e)
-        {
-            kn.Execute("Update GIAODICH SET MATK = '" + txtMTK_GD.Text + "', NGAYGD ='" + txtNGD_GD.Value + "', LOAIGD ='" + txtLGD_GD.Text + "', SOTIEN ='" + txtST_GD.Text + "', LOAITIETKIEM ='" + txtLTK_GD.Text + "', MAKYHAN ='" + txtMKH_GD.Text + "' where MAGD = '" + txtMGD_GD.Text + "'");
-            LAYBANG_GD();
-        }
-
-        private void btnLuu_GD_Click(object sender, EventArgs e)
-        {
-            kn.Execute("INSERT INTO GIAODICH Values ('" + txtMGD_GD.Text + "','" + txtMTK_GD.Text + "','" + txtNGD_GD.Value + "','" + txtLGD_GD.Text + "','" + txtST_GD.Text + "','" + txtLTK_GD.Text + "','" + txtMKH_GD.Text + "')");
-            LAYBANG_GD();
-        }
-
-        private void btnXoa_GD_Click(object sender, EventArgs e)
-        {
-            kn.Execute("Delete GIAODICH where MAGD = '" +txtMGD_GD.Text + "'");
-            LAYBANG_GD();
-        }
+        
 
         //------------------------------------------//
 
@@ -785,47 +685,20 @@ namespace QLTKNH
 
             if( btnTTCN1 % 2 == 1)
             {
+                visibleBtn();
                 btnPQL.Visible = true;
-                btnTTNQL.Visible = true;
-                btnTKTK.Visible = false;
-                btnGD.Visible = false;
-                btnCTGD.Visible = false;
-                btnLaiSuat.Visible = false;
-                btnKyHan.Visible = false;
-
+                btnTTNQL.Visible = true;             
                 picTTNQL.Visible = true;
                 picPQL.Visible = true;
-                picTKTK.Visible = false;
-                picGD.Visible = false;
-                picCTGD.Visible = false;
-                picKH.Visible = false;
-                picLS.Visible = false;
-
-               
+                
                 btnTTKH.Location = new Point(0, 355);
                 btnTTLS.Location = new Point(0, 435);
             }
 
             else
             {
-                btnPQL.Visible = false;
-                btnTTNQL.Visible = false;
-                btnTKTK.Visible = false;
-                btnGD.Visible = false;
-                btnCTGD.Visible = false;
-                btnLaiSuat.Visible = false;
-                btnKyHan.Visible = false;
+                visibleBtn();
 
-                picTTNQL.Visible = false;
-                picPQL.Visible = false;
-                picTKTK.Visible = false;
-                picGD.Visible = false;
-                picCTGD.Visible = false;
-                picKH.Visible = false;
-                picLS.Visible = false;
-
-
-               
                 btnTTKH.Location = new Point(0, 255);
                 btnTTLS.Location = new Point(0, 335);
             }
@@ -839,21 +712,14 @@ namespace QLTKNH
             btnTTKH1++;
             if(btnTTKH1 % 2 == 1 )
             {
-                btnTTNQL.Visible = false;
-                btnPQL.Visible = false;
+                visibleBtn();
                 btnTKTK.Visible = true;
-                btnGD.Visible = true;
-                btnCTGD.Visible = true;
-                btnLaiSuat.Visible = false;
-                btnKyHan.Visible = false;
-
-                picTTNQL.Visible = false;
-                picPQL.Visible = false;
+                btnKhachHang.Visible = true;
+                btnCTGD.Visible = true;        
                 picTKTK.Visible = true;
-                picGD.Visible = true;
+                picKhachHang.Visible = true;
                 picCTGD.Visible = true;
-                picKH.Visible = false;
-                picLS.Visible = false;
+
 
 
                 btnTTKH.Location = new Point(0, 255);
@@ -862,24 +728,7 @@ namespace QLTKNH
             }
             else
             {
-                btnPQL.Visible = false;
-                btnTTNQL.Visible = false;
-                btnTKTK.Visible = false;
-                btnGD.Visible = false;
-                btnCTGD.Visible = false;
-                btnLaiSuat.Visible = false;
-                btnKyHan.Visible = false;
-
-                picTTNQL.Visible = false;
-                picPQL.Visible = false;
-                picTKTK.Visible = false;
-                picGD.Visible = false;
-                picCTGD.Visible = false;
-                picKH.Visible = false;
-                picLS.Visible = false;
-
-
-               
+                visibleBtn();
 
                 btnTTKH.Location = new Point(0, 255);
                 btnTTLS.Location = new Point(0, 335);
@@ -891,19 +740,9 @@ namespace QLTKNH
             btnTTLS1++;
             if (btnTTLS1 % 2==1 )
             {
-                btnPQL.Visible = false;
-                btnTTNQL.Visible = false;
-                btnTKTK.Visible = false;
-                btnGD.Visible = false;
-                btnCTGD.Visible = false;
+                visibleBtn();              
                 btnLaiSuat.Visible = true;
                 btnKyHan.Visible = true;
-
-                picTTNQL.Visible = false;
-                picPQL.Visible = false;
-                picTKTK.Visible = false;
-                picGD.Visible = false;
-                picCTGD.Visible = false;
                 picKH.Visible = true;
                 picLS.Visible = true;
 
@@ -912,21 +751,7 @@ namespace QLTKNH
             }
             else
             {
-                btnPQL.Visible = false;
-                btnTTNQL.Visible = false;
-                btnTKTK.Visible = false;
-                btnGD.Visible = false;
-                btnCTGD.Visible = false;
-                btnLaiSuat.Visible = false;
-                btnKyHan.Visible = false;
-
-                picTTNQL.Visible = false;
-                picPQL.Visible = false;
-                picTKTK.Visible = false;
-                picGD.Visible = false;
-                picCTGD.Visible = false;
-                picKH.Visible = false;
-                picLS.Visible = false;
+                visibleBtn();
 
                 btnTTKH.Location = new Point(0, 255);
                 btnTTLS.Location = new Point(0, 335);

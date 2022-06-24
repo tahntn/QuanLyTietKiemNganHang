@@ -21,6 +21,7 @@ namespace QLTKNH
 
         private void visibleForm()
         {
+            grbKhachHang.Visible = false;
             grbTTNQL.Visible = false;
             grbLS.Visible = false;
             grbKH.Visible = false;
@@ -30,9 +31,8 @@ namespace QLTKNH
         }
         private void visibleHidden()
         {
+           
             
-
-
             btnKH.Visible = false;
             btnTTNQL.Visible = false;
             btnTKTK.Visible = false;
@@ -166,8 +166,11 @@ namespace QLTKNH
         {
             backgroundTrans();
             visibleForm();
+            grbKhachHang.Visible = true;
             btnKH.BackColor = Color.FromArgb(26, 154, 254);
             picKH.BackColor = Color.FromArgb(26, 154, 254);
+
+            LAYBANG_KhachHang();
         }
 
         private void btnTKTK_Click(object sender, EventArgs e)
@@ -677,6 +680,75 @@ namespace QLTKNH
         {
             kn.Execute("Delete TAIKHOANTIETKIEM where MATK = '" + txtMTK_TKTK.Text + "'");
             LAYBANG_TKTK();
+        }
+
+        //Khách Hàng
+
+        public void LAYBANG_KhachHang()
+        {
+
+            DataTable data = new DataTable();
+            data = kn.Lay_Dulieu("Select * From  KHACHHANG");
+            dataKhachHang.DataSource = data;
+            Hienthi_Dulieu_KhachHang();
+        }
+
+        private void Hienthi_Dulieu_KhachHang()
+        {
+            txtMKH_KHang.DataBindings.Clear();
+            txtMKH_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "MAKH");
+
+            txtTKH_KHang.DataBindings.Clear();
+            txtTKH_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "TENKH");
+
+            txtDT_KHang.DataBindings.Clear();
+            txtDT_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "DIENTHOAIKH");
+
+            txtCCND_KHang.DataBindings.Clear();
+            txtCCND_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "CMND");
+
+            txtDC_KHang.DataBindings.Clear();
+            txtDC_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "DIACHI");
+
+            txtEmal_KHang.DataBindings.Clear();
+            txtEmal_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "MAIL");
+
+            txtNS_KHang.DataBindings.Clear();
+            txtNS_KHang.DataBindings.Add("Text", dataKhachHang.DataSource, "NGAYSINH");
+
+        }
+
+        private void btnTM_KHang_Click(object sender, EventArgs e)
+        {
+            txtMKH_KHang.Text = "";
+            txtTKH_KHang.Text = "";
+            txtDC_KHang.Text = "";
+            txtNS_KHang.Text = "";
+            txtEmal_KHang.Text = "";
+            txtDT_KHang.Text = "";
+            txtCCND_KHang.Text = "";
+
+            txtMKH_KHang.Focus();
+        }
+
+        private void btnSua_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("Update KHACHHANG SET TENKH = '" + txtTKH_KHang.Text + "', DIACHI ='" + txtDC_KHang.Text + "', NGAYSINH = '" + txtNS_KHang.Value + "', CMND ='" + txtCCND_KHang.Text + "', DIENTHOAIKH ='" + txtDT_KHang.Text + "', MAIL ='" + txtEmal_KHang.Text + "' where MAKH = '" + txtMKH_KHang.Text + "'");
+
+            LAYBANG_KhachHang();
+        }
+
+        private void btnLuu_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("INSERT INTO KHACHHANG  Values ('" + txtMKH_KHang.Text + "','" + txtTKH_KHang.Text + "','" + txtCCND_KHang.Text + "','" + txtNS_KHang.Value + "','" + txtDC_KHang.Text + "','" + txtDT_KHang.Text + "','" + txtEmal_KHang.Text + "')");
+
+            LAYBANG_KhachHang();
+        }
+
+        private void btnXoa_KHang_Click(object sender, EventArgs e)
+        {
+            kn.Execute("Delete KHACHHANG where MAKH = '" + txtMKH_KHang.Text + "'");
+            LAYBANG_KhachHang();
         }
     }
 }
