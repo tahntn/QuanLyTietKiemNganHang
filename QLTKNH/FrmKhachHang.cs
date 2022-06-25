@@ -12,9 +12,17 @@ namespace QLTKNH
 {
     public partial class FrmKhachHang : Form
     {
+        private string _mess;
+
         public FrmKhachHang()
         {
             InitializeComponent();
+        }
+
+        public FrmKhachHang(string Mess):this()
+        {
+            _mess = Mess;
+
         }
 
         ketnoi kn = new ketnoi();
@@ -28,6 +36,10 @@ namespace QLTKNH
             grbCTGD.Visible = false;
             grbGD.Visible = false;
             grbTKTK.Visible = false;
+            picBG.Visible = false;
+            logoBG.Visible = false;
+            lblBG.Visible = false;
+            pnlBG.Visible = false;
         }
         private void visibleHidden()
         {
@@ -41,72 +53,66 @@ namespace QLTKNH
             btnLS.Visible = false;
             btnKyHan.Visible = false;
 
-            picKH.Visible = false;
-            picTTNQL.Visible = false;
-            picTKTK.Visible = false;
-            picGD.Visible = false;
-            picCTGD.Visible = false;
-            picLS.Visible = false;
-            picKyHan.Visible = false;
         }
 
         private void backgroundTrans()
         {
-            btnKH.BackColor = Color.FromArgb(24, 44, 79);
-            btnTTNQL.BackColor = Color.FromArgb(24, 44, 79);          
-            btnTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            btnGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            btnKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            btnLS.BackColor = Color.FromArgb(24, 44, 79);
+            btnKH.FillColor = Color.FromArgb(24, 44, 79);
+            btnTTNQL.FillColor = Color.FromArgb(24, 44, 79);          
+            btnTKTK.FillColor = Color.FromArgb(24, 44, 79);
+            btnGD.FillColor = Color.FromArgb(24, 44, 79);
+            btnCTGD.FillColor = Color.FromArgb(24, 44, 79);
+            btnKyHan.FillColor = Color.FromArgb(24, 44, 79);
+            btnLS.FillColor = Color.FromArgb(24, 44, 79);
 
-            picKH.BackColor = Color.FromArgb(24, 44, 79);
-            picTTNQL.BackColor = Color.FromArgb(24, 44, 79);
-            picTKTK.BackColor = Color.FromArgb(24, 44, 79);
-            picGD.BackColor = Color.FromArgb(24, 44, 79);
-            picCTGD.BackColor = Color.FromArgb(24, 44, 79);
-            picKyHan.BackColor = Color.FromArgb(24, 44, 79);
-            picLS.BackColor = Color.FromArgb(24, 44, 79);
+         
         }
 
         private void FrmKhachHang_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(1350, 900);
             visibleHidden();
             visibleForm();
-            
-            
+            picBG.Visible = true;
+            logoBG.Visible = true;
+            lblBG.Visible = true;
+            pnlBG.Visible = true;
+
+            string sql = "select TenKH from KHACHHANG, DANGNHAP where DANGNHAP.TENDN = KHACHHANG.TENDN and DANGNHAP.TENDN = '" + _mess + "'";
+            DataTable dta = kn.Lay_Dulieu(sql);
+            lblKH.DataBindings.Add("Text", dta, "TENKH");
+
+
         }
 
         int btnTTCN1 = 0;
         int btnTTKH1 = 0;
         int btnTTLS1 = 0;
 
-
-        //Thông Tin Cá Nhân
-        private void btnTTCN_Click(object sender, EventArgs e)
+        private void btnTTCN_Click_1(object sender, EventArgs e)
         {
             btnTTCN1++;
             if (btnTTCN1 % 2 == 1)
             {
                 visibleHidden();
                 btnKH.Visible = true;
-                picKH.Visible = true;
 
-                btnTTTK.Location = new Point(0, 324);
-                btnTTLS.Location = new Point(0, 407);
+
+                
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257+7+52);
+                btnTTLS.Location = new Point(0, 337+7+7 +52);
             }
-            else {
+            else
+            {
                 visibleHidden();
-                btnTTTK.Location = new Point(0, 271);
-                btnTTLS.Location = new Point(0, 353);
-            } 
-                
-                
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257 + 7);
+                btnTTLS.Location = new Point(0, 337 + 7 + 7);
+            }
         }
 
-        //Thông Tin Tài Khoản
-
-        private void btnTTKH_Click(object sender, EventArgs e)
+        private void btnTTTK_Click(object sender, EventArgs e)
         {
             btnTTKH1++;
             if (btnTTKH1 % 2 == 1)
@@ -116,26 +122,22 @@ namespace QLTKNH
                 btnTKTK.Visible = true;
                 btnGD.Visible = true;
                 btnCTGD.Visible = true;
-                picTTNQL.Visible = true;
-                picTKTK.Visible = true;
-                picGD.Visible = true;
-                picCTGD.Visible = true;
-                btnTTTK.Location = new Point(0, 271);
-                btnTTLS.Location = new Point(0, 555);
+
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257 + 7);
+                btnTTLS.Location = new Point(0, 337+7+7+54*4);
 
             }
             else
             {
                 visibleHidden();
-                btnTTTK.Location = new Point(0, 271);
-                btnTTLS.Location = new Point(0, 353);
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257 + 7);
+                btnTTLS.Location = new Point(0, 337 + 7 + 7);
             }
-
         }
 
-
-        //Thông Tin Lãi Suất
-        private void btnTTLS_Click(object sender, EventArgs e)
+        private void btnTTLS3_Click(object sender, EventArgs e)
         {
             btnTTLS1++;
             if (btnTTLS1 % 2 == 1)
@@ -143,109 +145,116 @@ namespace QLTKNH
                 visibleHidden();
                 btnLS.Visible = true;
                 btnKyHan.Visible = true;
-                picLS.Visible = true;
-                picKyHan.Visible = true;
-                btnTTTK.Location = new Point(0, 271);
-                btnTTLS.Location = new Point(0, 353);
+
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257 + 7);
+                btnTTLS.Location = new Point(0, 337 + 7 + 7);
 
 
             }
             else
             {
                 visibleHidden();
-                btnTTTK.Location = new Point(0, 271);
-                btnTTLS.Location = new Point(0, 353);
+                btnTTCN.Location = new Point(0, 177);
+                btnTTTK.Location = new Point(0, 257 + 7);
+                btnTTLS.Location = new Point(0, 337 + 7 + 7);
             }
-
         }
 
 
         //-----------------------//
 
-        private void btnKH_Click(object sender, EventArgs e)
+        private void btnKH_Click_1(object sender, EventArgs e)
         {
             backgroundTrans();
             visibleForm();
             grbKhachHang.Visible = true;
-            btnKH.BackColor = Color.FromArgb(26, 154, 254);
-            picKH.BackColor = Color.FromArgb(26, 154, 254);
+            btnKH.FillColor = Color.FromArgb(26, 154, 254);
 
             LAYBANG_KhachHang();
         }
 
-        private void btnTKTK_Click(object sender, EventArgs e)
-        {
-            backgroundTrans();
-            visibleForm();
-            grbTKTK.Visible = true;
-            btnTKTK.BackColor = Color.FromArgb(26, 154, 254);
-            picTKTK.BackColor = Color.FromArgb(26, 154, 254);
-
-            LAYBANG_TKTK();
-            LAYBANG_KH_TKTK();
-        }
-
-        private void btnGD_Click(object sender, EventArgs e)
-        {
-            backgroundTrans();
-            visibleForm();
-            grbGD.Visible = true;
-            btnGD.BackColor = Color.FromArgb(26, 154, 254);
-            picGD.BackColor = Color.FromArgb(26, 154, 254);
-
-            LAYBANG_GD();
-            LAYBANG_KH_GD();
-            LAYBANG_TKTK_GD();
-        }
-
-        private void btnCTGD_Click(object sender, EventArgs e)
-        {
-            backgroundTrans();
-            visibleForm();
-            grbCTGD.Visible = true;
-            btnCTGD.BackColor = Color.FromArgb(26, 154, 254);
-            picCTGD.BackColor = Color.FromArgb(26, 154, 254);
-
-            LAYBANG_CTGD();
-            LAYBANG_KH_CTGD();
-            LAYBANG_GD_CTGD();
-        }
-
-
-        private void btnTTNQL_Click(object sender, EventArgs e)
-        {
-            backgroundTrans();
-            visibleForm();
-            grbTTNQL.Visible = true;
-            btnTTNQL.BackColor = Color.FromArgb(26, 154, 254);
-            picTTNQL.BackColor = Color.FromArgb(26, 154, 254);
-
-            LAYBANG_TTNQL();
-        }
-
-        private void btnLS_Click(object sender, EventArgs e)
+        private void btnLS_Click_1(object sender, EventArgs e)
         {
             backgroundTrans();
             visibleForm();
             grbLS.Visible = true;
-            btnLS.BackColor = Color.FromArgb(26, 154, 254);
-            picLS.BackColor = Color.FromArgb(26, 154, 254);
+            btnLS.FillColor = Color.FromArgb(26, 154, 254);
+
             LAYBANG_LS();
         }
 
-        private void btnKyHan_Click(object sender, EventArgs e)
+        private void btnKyHan_Click_1(object sender, EventArgs e)
         {
             backgroundTrans();
             visibleForm();
             grbKH.Visible = true;
-            btnKyHan.BackColor = Color.FromArgb(26, 154, 254);
-            picKyHan.BackColor = Color.FromArgb(26, 154, 254);
+            btnKyHan.FillColor = Color.FromArgb(26, 154, 254);
+
 
             LAYBANG_KH();
             LAYBANG_TTNQL_KH();
             LAYBANG_TKTK_KH();
             LAYBANG_LS_KH();
         }
+
+        private void btnTTNQL_Click_1(object sender, EventArgs e)
+        {
+            backgroundTrans();
+            visibleForm();
+            grbTTNQL.Visible = true;
+            btnTTNQL.FillColor = Color.FromArgb(26, 154, 254);
+
+            LAYBANG_TTNQL();
+        }
+
+        private void btnGD_Click_1(object sender, EventArgs e)
+        {
+            backgroundTrans();
+            visibleForm();
+            grbGD.Visible = true;
+            btnGD.FillColor = Color.FromArgb(26, 154, 254);
+
+
+            LAYBANG_GD();
+            LAYBANG_KH_GD();
+            LAYBANG_TKTK_GD();
+        }
+
+        private void btnTKTK_Click_1(object sender, EventArgs e)
+        {
+            backgroundTrans();
+            visibleForm();
+            grbTKTK.Visible = true;
+            btnTKTK.FillColor = Color.FromArgb(26, 154, 254);
+
+
+            LAYBANG_TKTK();
+            LAYBANG_KH_TKTK();
+        }
+
+        private void btnCTGD_Click_1(object sender, EventArgs e)
+        {
+            backgroundTrans();
+            visibleForm();
+            grbCTGD.Visible = true;
+            btnCTGD.FillColor = Color.FromArgb(26, 154, 254);
+
+
+            LAYBANG_CTGD();
+            LAYBANG_KH_CTGD();
+            LAYBANG_GD_CTGD();
+
+           
+        }
+
+
+        /// <summary>
+        /// ///////////
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+      
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
@@ -257,7 +266,10 @@ namespace QLTKNH
         private void LAYBANG_TTNQL()
         {
             DataTable dta = new DataTable();
-            dta = kn.Lay_Dulieu("Select * From THONGTINNGUOIQUANLY");
+
+            dta = kn.Lay_Dulieu("select THONGTINNGUOIQUANLY.MAQL, THONGTINNGUOIQUANLY.TENQL, THONGTINNGUOIQUANLY.DIACHIQL, THONGTINNGUOIQUANLY.SDT, THONGTINNGUOIQUANLY.EMAIL " 
+                                +"from THONGTINNGUOIQUANLY, DANGNHAP, KYHAN, TAIKHOANTIETKIEM, KHACHHANG "
+                                +"where  DANGNHAP.TENDN = KHACHHANG.TENDN  and THONGTINNGUOIQUANLY.MAQL = KYHAN.MAQL and KYHAN.MATK = TAIKHOANTIETKIEM.MATK and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH and DANGNHAP.TENDN = '"+ _mess +"'");
             dataTTNQL.DataSource = dta;
             Hienthi_Dulieu_TTNQL();
 
@@ -318,7 +330,9 @@ namespace QLTKNH
         public void LAYBANG_LS()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  LAISUAT");
+            data = kn.Lay_Dulieu("select LAISUAT.MALS, LAISUAT.MUCLS " +
+                                "from KHACHHANG, LAISUAT, KYHAN, TAIKHOANTIETKIEM " +
+                                 "where KHACHHANG.TENDN ='"+_mess+"' and KYHAN.MALS = LAISUAT.MALS and KYHAN.MATK = TAIKHOANTIETKIEM.MATK and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH" );
             dataLS.DataSource = data;
             Hienthi_Dulieu_LS();
         }
@@ -363,7 +377,9 @@ namespace QLTKNH
         public void LAYBANG_KH()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  KYHAN");
+            data = kn.Lay_Dulieu("select KYHAN.KYHAN, KYHAN.LOAITIEN, KYHAN.MAKYHAN, KYHAN.MALS, KYHAN.MALS, KYHAN.MAQL, KYHAN.MATK " +
+                                 "from KHACHHANG, KYHAN, TAIKHOANTIETKIEM " +
+                                    "where KHACHHANG.TENDN = '"+_mess +"' and KYHAN.MATK = TAIKHOANTIETKIEM.MATK and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH ");
             dataKH.DataSource = data;
             Hienthi_Dulieu_KH();
         }
@@ -371,7 +387,10 @@ namespace QLTKNH
         public void LAYBANG_TTNQL_KH()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From THONGTINNGUOIQUANLY");
+            data = kn.Lay_Dulieu("select THONGTINNGUOIQUANLY.MAQL "
+                               + "from THONGTINNGUOIQUANLY, DANGNHAP, KYHAN, TAIKHOANTIETKIEM, KHACHHANG "
+                               + "where  DANGNHAP.TENDN = KHACHHANG.TENDN  and THONGTINNGUOIQUANLY.MAQL = KYHAN.MAQL and KYHAN.MATK = TAIKHOANTIETKIEM.MATK and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH and DANGNHAP.TENDN = '" + _mess + "'");
+
             txtMQL_KH.DataSource = data;
             txtMQL_KH.DisplayMember = "MAQL";
             txtMQL_KH.ValueMember = "MAQL";
@@ -380,7 +399,10 @@ namespace QLTKNH
         public void LAYBANG_TKTK_KH()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From TAIKHOANTIETKIEM");
+            data = kn.Lay_Dulieu("select TAIKHOANTIETKIEM.MATK " +
+                              "from DANGNHAP, KHACHHANG, TAIKHOANTIETKIEM " +
+                               "where DANGNHAP.TENDN = KHACHHANG.TENDN and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH  and DANGNHAP.TENDN = '" + _mess + "'");
+
             txtMTK_KH.DataSource = data;
             txtMTK_KH.DisplayMember = "MATK";
             txtMTK_KH.ValueMember = "MATK";
@@ -455,7 +477,9 @@ namespace QLTKNH
         public void LAYBANG_CTGD()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  CHITIETGIAODICH");
+            data = kn.Lay_Dulieu("select CHITIETGIAODICH.MACHITIET, CHITIETGIAODICH.MAGD, CHITIETGIAODICH.MAKH, CHITIETGIAODICH.NOIDUNG, CHITIETGIAODICH.SOTIEN " +
+                                "from DANGNHAP, KHACHHANG, CHITIETGIAODICH " +
+                                "where DANGNHAP.TENDN = KHACHHANG.TENDN and KHACHHANG.MAKH = CHITIETGIAODICH.MAKH and DANGNHAP.TENDN = '"+_mess +"'");
             dataCTGD.DataSource = data;
             Hienthi_Dulieu_CTGD();
         }
@@ -463,7 +487,9 @@ namespace QLTKNH
         public void LAYBANG_KH_CTGD()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  KHACHHANG");
+            data = kn.Lay_Dulieu("select MAKH " +
+              "from KHACHHANG, DANGNHAP " +
+              "where  DANGNHAP.TENDN = KHACHHANG.TENDN and DANGNHAP.TENDN = '" + _mess + "'");
             txtMKH_CTGD.DataSource = data;
             txtMKH_CTGD.DisplayMember = "MAKH";
             txtMKH_CTGD.ValueMember = "MAKH";
@@ -472,7 +498,9 @@ namespace QLTKNH
         public void LAYBANG_GD_CTGD()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From GIAODICH");
+            data = kn.Lay_Dulieu("select GIAODICH.MAGD " +
+                              "from GIAODICH, DANGNHAP, khachhang, taikhoantietkiem " +
+                             "where DANGNHAP.TENDN = KHACHHANG.TENDN and giaodich.Matk = taikhoantietkiem.matk and taikhoantietkiem.maKH = Khachhang.makh and DANGNHAP.TENDN = '" + _mess + "'");
             txtMGD_CTGD.DataSource = data;
             txtMGD_CTGD.DisplayMember = "MAGD";
             txtMGD_CTGD.ValueMember = "MAGD";
@@ -532,7 +560,9 @@ namespace QLTKNH
         public void LAYBANG_GD()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  GIAODICH");
+            data = kn.Lay_Dulieu("select GIAODICH.MAGD,GIAODICH.MATK,GIAODICH.NGAYGD,GIAODICH.LOAIGD, GIAODICH.SOTIEN, GIAODICH.LOAITIETKIEM, GIAODICH.MAKYHAN " +
+                                 "from GIAODICH, DANGNHAP, khachhang, taikhoantietkiem " +
+                                "where DANGNHAP.TENDN = KHACHHANG.TENDN and giaodich.Matk = taikhoantietkiem.matk and taikhoantietkiem.maKH = Khachhang.makh and DANGNHAP.TENDN = '" + _mess+ "'");
             dataGD.DataSource = data;
             Hienthi_Dulieu_GD();
         }
@@ -540,8 +570,10 @@ namespace QLTKNH
         public void LAYBANG_TKTK_GD()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  TAIKHOANTIETKIEM");
-            txtMTK_GD.DataSource = data;
+            data = kn.Lay_Dulieu("select TAIKHOANTIETKIEM.MAKH,TAIKHOANTIETKIEM.MATK,TAIKHOANTIETKIEM.LOAITIEN,TAIKHOANTIETKIEM.NGAYMOSO,TAIKHOANTIETKIEM.SOTIENGOC " +
+                              "from DANGNHAP, KHACHHANG, TAIKHOANTIETKIEM " +
+                               "where DANGNHAP.TENDN = KHACHHANG.TENDN and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH  and DANGNHAP.TENDN = '" + _mess + "'");
+
             txtMTK_GD.DisplayMember = "MATK";
             txtMTK_GD.ValueMember = "MATK";
         }
@@ -621,7 +653,9 @@ namespace QLTKNH
         {
 
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  TAIKHOANTIETKIEM");
+            data = kn.Lay_Dulieu("select TAIKHOANTIETKIEM.MAKH,TAIKHOANTIETKIEM.MATK,TAIKHOANTIETKIEM.LOAITIEN,TAIKHOANTIETKIEM.NGAYMOSO,TAIKHOANTIETKIEM.SOTIENGOC " +
+                                "from DANGNHAP, KHACHHANG, TAIKHOANTIETKIEM " +
+                                 "where DANGNHAP.TENDN = KHACHHANG.TENDN and TAIKHOANTIETKIEM.MAKH = KHACHHANG.MAKH  and DANGNHAP.TENDN = '"+ _mess +"'");
             dataTKTK.DataSource = data;
             Hienthi_Dulieu_TKTK();
         }
@@ -629,7 +663,9 @@ namespace QLTKNH
         public void LAYBANG_KH_TKTK()
         {
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  KHACHHANG");
+            data = kn.Lay_Dulieu("select MAKH " +
+             "from KHACHHANG, DANGNHAP " +
+             "where  DANGNHAP.TENDN = KHACHHANG.TENDN and DANGNHAP.TENDN = '" + _mess + "'");
             txtMKH_TKTK.DataSource = data;
             txtMKH_TKTK.DisplayMember = "MAKH";
             txtMKH_TKTK.ValueMember = "MAKH";
@@ -688,7 +724,9 @@ namespace QLTKNH
         {
 
             DataTable data = new DataTable();
-            data = kn.Lay_Dulieu("Select * From  KHACHHANG");
+            data = kn.Lay_Dulieu("select MAKH, TENKH, CMND, NGAYSINH,DIACHI, DIENTHOAIKH,MAIL " +
+                "from KHACHHANG, DANGNHAP " +
+                "where  DANGNHAP.TENDN = KHACHHANG.TENDN and DANGNHAP.TENDN = '" + _mess +"'");
             dataKhachHang.DataSource = data;
             Hienthi_Dulieu_KhachHang();
         }
@@ -749,6 +787,17 @@ namespace QLTKNH
         {
             kn.Execute("Delete KHACHHANG where MAKH = '" + txtMKH_KHang.Text + "'");
             LAYBANG_KhachHang();
+        }
+
+        private void btnThoat_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmBaoCao form = new frmBaoCao(txtMCT_CTGD.Text);
+            form.Show();
         }
     }
 }

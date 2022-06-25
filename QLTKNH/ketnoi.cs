@@ -17,7 +17,7 @@ namespace QLTKNH
 
         public void KetNoi_Dulieu()
         {
-            string strKetNoi = @"Data Source=DESKTOP-QUA3K1M\SQLEXPRESS;Initial Catalog=QLTK;Integrated Security=True";
+            string strKetNoi = @"Data Source=DESKTOP-QUA3K1M\SQLEXPRESS;Initial Catalog=Nhom4_QLTK;Integrated Security=True";
             cnn = new SqlConnection(strKetNoi);
             cnn.Open();
         }
