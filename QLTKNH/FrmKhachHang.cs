@@ -249,11 +249,7 @@ namespace QLTKNH
         }
 
 
-        /// <summary>
-        /// ///////////
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+       
       
 
         private void btnThoat_Click(object sender, EventArgs e)
@@ -293,36 +289,9 @@ namespace QLTKNH
 
         }
 
-        private void btnTM_TTNQL_Click(object sender, EventArgs e)
-        {
-            txtMQL_TTNQL.Text = "";
-            txtTQL_TTNQL.Text = "";
-            txtSDT_TTNQL.Text = "";
-            txtEmail_TTNQL.Text = "";
-            txtDC_TTNQL.Text = "";
+       
 
-            txtMQL_TTNQL.Focus();
-        }
-
-        private void btnSua_TTNQL_Click(object sender, EventArgs e)
-        {
-            kn.Execute("Update THONGTINNGUOIQUANLY SET TENQL = '" + txtTQL_TTNQL.Text + "', SDT = '" + txtSDT_TTNQL.Text + "', Email = '" + txtEmail_TTNQL.Text + "', DIACHIQL = '" + txtDC_TTNQL.Text + "' where MAQL = '" + txtMQL_TTNQL.Text + "'");
-
-            LAYBANG_TTNQL();
-        }
-
-        private void btnLuu_TTNQL_Click(object sender, EventArgs e)
-        {
-            kn.Execute("INSERT INTO THONGTINNGUOIQUANLY Values ('" + txtMQL_TTNQL.Text + "','" + txtTQL_TTNQL.Text + "','" + txtSDT_TTNQL.Text + "','" + txtEmail_TTNQL.Text + "','" + txtDC_TTNQL.Text + "')");
-            LAYBANG_TTNQL();
-        }
-
-        private void btnXoa_TTNQL_Click(object sender, EventArgs e)
-        {
-            kn.Execute("Delete THONGTINNGUOIQUANLY where MAQL = '" + txtMQL_TTNQL.Text + "'");
-            LAYBANG_TTNQL();
-        }
-
+        
 
         //----------------//
 
@@ -798,6 +767,37 @@ namespace QLTKNH
         {
             frmBaoCao form = new frmBaoCao(txtMCT_CTGD.Text);
             form.Show();
+        }
+
+        private void btnTM_TTNQL_Click_1(object sender, EventArgs e)
+        {
+            txtMQL_TTNQL.Text = "";
+            txtTQL_TTNQL.Text = "";
+            txtSDT_TTNQL.Text = "";
+            txtEmail_TTNQL.Text = "";
+            txtDC_TTNQL.Text = "";
+
+            txtMQL_TTNQL.Focus();
+        }
+
+        private void btnSua_TTNQL_Click_1(object sender, EventArgs e)
+        {
+            kn.Execute("Update THONGTINNGUOIQUANLY SET TENQL = '" + txtTQL_TTNQL.Text + "', SDT = '" + txtSDT_TTNQL.Text + "', Email = '" + txtEmail_TTNQL.Text + "', DIACHIQL = '" + txtDC_TTNQL.Text + "' where MAQL = '" + txtMQL_TTNQL.Text + "'");
+
+            LAYBANG_TTNQL();
+        }
+      
+
+        private void btnLuu_TTNQL_Click_1(object sender, EventArgs e)
+        {
+            kn.Execute("INSERT INTO THONGTINNGUOIQUANLY Values ('" + txtMQL_TTNQL.Text + "','" + txtTQL_TTNQL.Text + "','" + txtSDT_TTNQL.Text + "','" + txtEmail_TTNQL.Text + "','" + txtDC_TTNQL.Text + "')");
+            LAYBANG_TTNQL();
+        }
+
+        private void btnXoa_TTNQL_Click_1(object sender, EventArgs e)
+        {
+            kn.Execute("Delete THONGTINNGUOIQUANLY where MAQL = '" + txtMQL_TTNQL.Text + "'");
+            LAYBANG_TTNQL();
         }
     }
 }

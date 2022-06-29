@@ -243,21 +243,21 @@ namespace QLTKNH
             this.grbTK = new System.Windows.Forms.GroupBox();
             this.dataTK = new System.Windows.Forms.DataGridView();
             this.panel53 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.txtTNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtMNV = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtMKH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTKH = new Guna.UI2.WinForms.Guna2TextBox();
+            this.rdbMNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdbTNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdbMKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdbTKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.panel54 = new System.Windows.Forms.Panel();
             this.label16 = new System.Windows.Forms.Label();
-            this.rdbTKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rdbMKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rdbTNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rdbMNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.txtTKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtMKH = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtMNV = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.txtTNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.grbPQL.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -2183,6 +2183,7 @@ namespace QLTKNH
             // txtNS_KHang
             // 
             this.txtNS_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS_KHang.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtNS_KHang.Location = new System.Drawing.Point(757, 104);
             this.txtNS_KHang.Name = "txtNS_KHang";
             this.txtNS_KHang.Size = new System.Drawing.Size(269, 24);
@@ -2877,138 +2878,60 @@ namespace QLTKNH
             this.panel53.Size = new System.Drawing.Size(1133, 241);
             this.panel53.TabIndex = 5;
             // 
-            // panel54
+            // label12
             // 
-            this.panel54.BackColor = System.Drawing.Color.White;
-            this.panel54.Controls.Add(this.label16);
-            this.panel54.Location = new System.Drawing.Point(0, 22);
-            this.panel54.Name = "panel54";
-            this.panel54.Size = new System.Drawing.Size(1223, 66);
-            this.panel54.TabIndex = 0;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(107, 76);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(216, 32);
+            this.label12.TabIndex = 16;
+            this.label12.Text = "Mã Khách Hàng";
             // 
-            // label16
+            // label11
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label16.Location = new System.Drawing.Point(25, 14);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(314, 37);
-            this.label16.TabIndex = 3;
-            this.label16.Text = "Tìm Kiếm Thông Tin";
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(107, 126);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(176, 32);
+            this.label11.TabIndex = 15;
+            this.label11.Text = "Tên Quản Lý";
             // 
-            // rdbTKH
+            // label10
             // 
-            this.rdbTKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbTKH.CheckedState.BorderThickness = 0;
-            this.rdbTKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbTKH.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbTKH.Location = new System.Drawing.Point(53, 36);
-            this.rdbTKH.Name = "rdbTKH";
-            this.rdbTKH.Size = new System.Drawing.Size(20, 20);
-            this.rdbTKH.TabIndex = 0;
-            this.rdbTKH.Text = "Tên Nhân Viên";
-            this.rdbTKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbTKH.UncheckedState.BorderThickness = 2;
-            this.rdbTKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbTKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(107, 178);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(170, 32);
+            this.label10.TabIndex = 14;
+            this.label10.Text = "Mã Quản Lý";
             // 
-            // rdbMKH
+            // label1
             // 
-            this.rdbMKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbMKH.CheckedState.BorderThickness = 0;
-            this.rdbMKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbMKH.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbMKH.Location = new System.Drawing.Point(53, 82);
-            this.rdbMKH.Name = "rdbMKH";
-            this.rdbMKH.Size = new System.Drawing.Size(20, 20);
-            this.rdbMKH.TabIndex = 1;
-            this.rdbMKH.Text = "guna2CustomRadioButton2";
-            this.rdbMKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbMKH.UncheckedState.BorderThickness = 2;
-            this.rdbMKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbMKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(105, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(222, 32);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tên Khách Hàng";
             // 
-            // rdbTNV
+            // guna2Button1
             // 
-            this.rdbTNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbTNV.CheckedState.BorderThickness = 0;
-            this.rdbTNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbTNV.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbTNV.Location = new System.Drawing.Point(54, 129);
-            this.rdbTNV.Name = "rdbTNV";
-            this.rdbTNV.Size = new System.Drawing.Size(20, 20);
-            this.rdbTNV.TabIndex = 4;
-            this.rdbTNV.Text = "guna2CustomRadioButton1";
-            this.rdbTNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbTNV.UncheckedState.BorderThickness = 2;
-            this.rdbTNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbTNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // rdbMNV
-            // 
-            this.rdbMNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbMNV.CheckedState.BorderThickness = 0;
-            this.rdbMNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdbMNV.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdbMNV.Location = new System.Drawing.Point(54, 183);
-            this.rdbMNV.Name = "rdbMNV";
-            this.rdbMNV.Size = new System.Drawing.Size(20, 20);
-            this.rdbMNV.TabIndex = 6;
-            this.rdbMNV.Text = "guna2CustomRadioButton3";
-            this.rdbMNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdbMNV.UncheckedState.BorderThickness = 2;
-            this.rdbMNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdbMNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // txtTKH
-            // 
-            this.txtTKH.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTKH.DefaultText = "";
-            this.txtTKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTKH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTKH.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTKH.Location = new System.Drawing.Point(440, 29);
-            this.txtTKH.Name = "txtTKH";
-            this.txtTKH.PasswordChar = '\0';
-            this.txtTKH.PlaceholderText = "";
-            this.txtTKH.SelectedText = "";
-            this.txtTKH.Size = new System.Drawing.Size(371, 36);
-            this.txtTKH.TabIndex = 8;
-            // 
-            // txtMKH
-            // 
-            this.txtMKH.BackColor = System.Drawing.Color.Transparent;
-            this.txtMKH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtMKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtMKH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMKH.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtMKH.ItemHeight = 30;
-            this.txtMKH.Location = new System.Drawing.Point(440, 79);
-            this.txtMKH.Name = "txtMKH";
-            this.txtMKH.Size = new System.Drawing.Size(371, 36);
-            this.txtMKH.TabIndex = 9;
-            // 
-            // txtMNV
-            // 
-            this.txtMNV.BackColor = System.Drawing.Color.Transparent;
-            this.txtMNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txtMNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txtMNV.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMNV.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtMNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txtMNV.ItemHeight = 30;
-            this.txtMNV.Location = new System.Drawing.Point(440, 174);
-            this.txtMNV.Name = "txtMNV";
-            this.txtMNV.Size = new System.Drawing.Size(371, 36);
-            this.txtMNV.TabIndex = 10;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(877, 62);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(180, 84);
+            this.guna2Button1.TabIndex = 12;
+            this.guna2Button1.Text = "Tìm Kiếm";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // txtTNV
             // 
@@ -3029,60 +2952,138 @@ namespace QLTKNH
             this.txtTNV.Size = new System.Drawing.Size(371, 36);
             this.txtTNV.TabIndex = 11;
             // 
-            // guna2Button1
+            // txtMNV
             // 
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(877, 62);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 84);
-            this.guna2Button1.TabIndex = 12;
-            this.guna2Button1.Text = "Tìm Kiếm";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
+            this.txtMNV.BackColor = System.Drawing.Color.Transparent;
+            this.txtMNV.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMNV.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMNV.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMNV.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMNV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtMNV.ItemHeight = 30;
+            this.txtMNV.Location = new System.Drawing.Point(440, 174);
+            this.txtMNV.Name = "txtMNV";
+            this.txtMNV.Size = new System.Drawing.Size(371, 36);
+            this.txtMNV.TabIndex = 10;
             // 
-            // label1
+            // txtMKH
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 32);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Tên Khách Hàng";
+            this.txtMKH.BackColor = System.Drawing.Color.Transparent;
+            this.txtMKH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtMKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtMKH.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtMKH.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtMKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtMKH.ItemHeight = 30;
+            this.txtMKH.Location = new System.Drawing.Point(440, 79);
+            this.txtMKH.Name = "txtMKH";
+            this.txtMKH.Size = new System.Drawing.Size(371, 36);
+            this.txtMKH.TabIndex = 9;
             // 
-            // label10
+            // txtTKH
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(107, 178);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(170, 32);
-            this.label10.TabIndex = 14;
-            this.label10.Text = "Mã Quản Lý";
+            this.txtTKH.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTKH.DefaultText = "";
+            this.txtTKH.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTKH.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTKH.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTKH.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTKH.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTKH.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTKH.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTKH.Location = new System.Drawing.Point(440, 29);
+            this.txtTKH.Name = "txtTKH";
+            this.txtTKH.PasswordChar = '\0';
+            this.txtTKH.PlaceholderText = "";
+            this.txtTKH.SelectedText = "";
+            this.txtTKH.Size = new System.Drawing.Size(371, 36);
+            this.txtTKH.TabIndex = 8;
             // 
-            // label11
+            // rdbMNV
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(107, 126);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(176, 32);
-            this.label11.TabIndex = 15;
-            this.label11.Text = "Tên Quản Lý";
+            this.rdbMNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbMNV.CheckedState.BorderThickness = 0;
+            this.rdbMNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbMNV.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbMNV.Location = new System.Drawing.Point(54, 183);
+            this.rdbMNV.Name = "rdbMNV";
+            this.rdbMNV.Size = new System.Drawing.Size(20, 20);
+            this.rdbMNV.TabIndex = 6;
+            this.rdbMNV.Text = "guna2CustomRadioButton3";
+            this.rdbMNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbMNV.UncheckedState.BorderThickness = 2;
+            this.rdbMNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbMNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // label12
+            // rdbTNV
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(107, 76);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(216, 32);
-            this.label12.TabIndex = 16;
-            this.label12.Text = "Mã Khách Hàng";
+            this.rdbTNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbTNV.CheckedState.BorderThickness = 0;
+            this.rdbTNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbTNV.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbTNV.Location = new System.Drawing.Point(54, 129);
+            this.rdbTNV.Name = "rdbTNV";
+            this.rdbTNV.Size = new System.Drawing.Size(20, 20);
+            this.rdbTNV.TabIndex = 4;
+            this.rdbTNV.Text = "guna2CustomRadioButton1";
+            this.rdbTNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbTNV.UncheckedState.BorderThickness = 2;
+            this.rdbTNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbTNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbMKH
+            // 
+            this.rdbMKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbMKH.CheckedState.BorderThickness = 0;
+            this.rdbMKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbMKH.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbMKH.Location = new System.Drawing.Point(53, 82);
+            this.rdbMKH.Name = "rdbMKH";
+            this.rdbMKH.Size = new System.Drawing.Size(20, 20);
+            this.rdbMKH.TabIndex = 1;
+            this.rdbMKH.Text = "guna2CustomRadioButton2";
+            this.rdbMKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbMKH.UncheckedState.BorderThickness = 2;
+            this.rdbMKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbMKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // rdbTKH
+            // 
+            this.rdbTKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbTKH.CheckedState.BorderThickness = 0;
+            this.rdbTKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdbTKH.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdbTKH.Location = new System.Drawing.Point(53, 36);
+            this.rdbTKH.Name = "rdbTKH";
+            this.rdbTKH.Size = new System.Drawing.Size(20, 20);
+            this.rdbTKH.TabIndex = 0;
+            this.rdbTKH.Text = "Tên Nhân Viên";
+            this.rdbTKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdbTKH.UncheckedState.BorderThickness = 2;
+            this.rdbTKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdbTKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            // 
+            // panel54
+            // 
+            this.panel54.BackColor = System.Drawing.Color.White;
+            this.panel54.Controls.Add(this.label16);
+            this.panel54.Location = new System.Drawing.Point(0, 22);
+            this.panel54.Name = "panel54";
+            this.panel54.Size = new System.Drawing.Size(1223, 66);
+            this.panel54.TabIndex = 0;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Times New Roman", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label16.Location = new System.Drawing.Point(25, 14);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(314, 37);
+            this.label16.TabIndex = 3;
+            this.label16.Text = "Tìm Kiếm Thông Tin";
             // 
             // frmNguoiQuanLy
             // 

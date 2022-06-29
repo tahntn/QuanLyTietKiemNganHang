@@ -140,6 +140,8 @@ namespace QLTKNH
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             this.btnTM_CTGD = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnIn = new System.Windows.Forms.Button();
             this.label24 = new System.Windows.Forms.Label();
             this.grbGD = new System.Windows.Forms.GroupBox();
             this.dataGD = new System.Windows.Forms.DataGridView();
@@ -250,8 +252,6 @@ namespace QLTKNH
             this.picBG = new Guna.UI2.WinForms.Guna2PictureBox();
             this.logoBG = new System.Windows.Forms.PictureBox();
             this.lblBG = new System.Windows.Forms.Label();
-            this.btnIn = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -291,6 +291,7 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             this.panel25.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.grbGD.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGD)).BeginInit();
             this.panel7.SuspendLayout();
@@ -320,7 +321,6 @@ namespace QLTKNH
             this.panel51.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBG)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -637,6 +637,7 @@ namespace QLTKNH
             this.btnSua_TTNQL.TabIndex = 11;
             this.btnSua_TTNQL.Text = "Sửa";
             this.btnSua_TTNQL.UseVisualStyleBackColor = false;
+            this.btnSua_TTNQL.Click += new System.EventHandler(this.btnSua_TTNQL_Click_1);
             // 
             // btnXoa_TTNQL
             // 
@@ -649,6 +650,7 @@ namespace QLTKNH
             this.btnXoa_TTNQL.TabIndex = 10;
             this.btnXoa_TTNQL.Text = "Xóa";
             this.btnXoa_TTNQL.UseVisualStyleBackColor = false;
+            this.btnXoa_TTNQL.Click += new System.EventHandler(this.btnXoa_TTNQL_Click_1);
             // 
             // btnLuu_TTNQL
             // 
@@ -661,6 +663,7 @@ namespace QLTKNH
             this.btnLuu_TTNQL.TabIndex = 9;
             this.btnLuu_TTNQL.Text = "Lưu";
             this.btnLuu_TTNQL.UseVisualStyleBackColor = false;
+            this.btnLuu_TTNQL.Click += new System.EventHandler(this.btnLuu_TTNQL_Click_1);
             // 
             // pictureBox31
             // 
@@ -684,6 +687,7 @@ namespace QLTKNH
             this.btnTM_TTNQL.TabIndex = 0;
             this.btnTM_TTNQL.Text = "Tạo Mới";
             this.btnTM_TTNQL.UseVisualStyleBackColor = false;
+            this.btnTM_TTNQL.Click += new System.EventHandler(this.btnTM_TTNQL_Click_1);
             // 
             // panel41
             // 
@@ -1561,6 +1565,30 @@ namespace QLTKNH
             this.panel25.Size = new System.Drawing.Size(1223, 66);
             this.panel25.TabIndex = 0;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Red;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(995, 21);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 68;
+            this.pictureBox3.TabStop = false;
+            // 
+            // btnIn
+            // 
+            this.btnIn.BackColor = System.Drawing.Color.Red;
+            this.btnIn.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIn.ForeColor = System.Drawing.Color.Transparent;
+            this.btnIn.Location = new System.Drawing.Point(963, 0);
+            this.btnIn.Name = "btnIn";
+            this.btnIn.Size = new System.Drawing.Size(212, 63);
+            this.btnIn.TabIndex = 68;
+            this.btnIn.Text = "In";
+            this.btnIn.UseVisualStyleBackColor = false;
+            this.btnIn.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label24
             // 
             this.label24.AutoSize = true;
@@ -2298,6 +2326,7 @@ namespace QLTKNH
             // txtNS_KHang
             // 
             this.txtNS_KHang.Font = new System.Drawing.Font("Microsoft Tai Le", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNS_KHang.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.txtNS_KHang.Location = new System.Drawing.Point(757, 104);
             this.txtNS_KHang.Name = "txtNS_KHang";
             this.txtNS_KHang.Size = new System.Drawing.Size(269, 24);
@@ -2634,6 +2663,7 @@ namespace QLTKNH
             this.btnTKTK.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTKTK.ForeColor = System.Drawing.Color.White;
             this.btnTKTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTKTK.Image")));
+            this.btnTKTK.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnTKTK.ImageSize = new System.Drawing.Size(40, 40);
             this.btnTKTK.Location = new System.Drawing.Point(0, 497);
             this.btnTKTK.Name = "btnTKTK";
@@ -2655,6 +2685,7 @@ namespace QLTKNH
             this.btnCTGD.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCTGD.ForeColor = System.Drawing.Color.White;
             this.btnCTGD.Image = ((System.Drawing.Image)(resources.GetObject("btnCTGD.Image")));
+            this.btnCTGD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnCTGD.ImageSize = new System.Drawing.Size(40, 40);
             this.btnCTGD.Location = new System.Drawing.Point(0, 629);
             this.btnCTGD.Name = "btnCTGD";
@@ -2676,6 +2707,7 @@ namespace QLTKNH
             this.btnKyHan.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKyHan.ForeColor = System.Drawing.Color.White;
             this.btnKyHan.Image = ((System.Drawing.Image)(resources.GetObject("btnKyHan.Image")));
+            this.btnKyHan.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKyHan.ImageSize = new System.Drawing.Size(40, 40);
             this.btnKyHan.Location = new System.Drawing.Point(0, 604);
             this.btnKyHan.Name = "btnKyHan";
@@ -2697,6 +2729,7 @@ namespace QLTKNH
             this.btnKH.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKH.ForeColor = System.Drawing.Color.White;
             this.btnKH.Image = ((System.Drawing.Image)(resources.GetObject("btnKH.Image")));
+            this.btnKH.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnKH.ImageSize = new System.Drawing.Size(40, 40);
             this.btnKH.Location = new System.Drawing.Point(0, 324);
             this.btnKH.Name = "btnKH";
@@ -2718,6 +2751,7 @@ namespace QLTKNH
             this.btnLS.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLS.ForeColor = System.Drawing.Color.White;
             this.btnLS.Image = ((System.Drawing.Image)(resources.GetObject("btnLS.Image")));
+            this.btnLS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLS.ImageSize = new System.Drawing.Size(40, 40);
             this.btnLS.Location = new System.Drawing.Point(0, 538);
             this.btnLS.Name = "btnLS";
@@ -2771,12 +2805,13 @@ namespace QLTKNH
             this.btnGD.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGD.ForeColor = System.Drawing.Color.White;
             this.btnGD.Image = ((System.Drawing.Image)(resources.GetObject("btnGD.Image")));
+            this.btnGD.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnGD.ImageSize = new System.Drawing.Size(40, 40);
             this.btnGD.Location = new System.Drawing.Point(0, 563);
             this.btnGD.Name = "btnGD";
             this.btnGD.Size = new System.Drawing.Size(357, 60);
             this.btnGD.TabIndex = 56;
-            this.btnGD.Text = "Giao DỊch";
+            this.btnGD.Text = "Giao Dịch";
             this.btnGD.Click += new System.EventHandler(this.btnGD_Click_1);
             // 
             // btnTTCN
@@ -2889,30 +2924,6 @@ namespace QLTKNH
             this.lblBG.TabIndex = 67;
             this.lblBG.Text = "BANK";
             // 
-            // btnIn
-            // 
-            this.btnIn.BackColor = System.Drawing.Color.Red;
-            this.btnIn.Font = new System.Drawing.Font("Verdana", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIn.ForeColor = System.Drawing.Color.Transparent;
-            this.btnIn.Location = new System.Drawing.Point(963, 0);
-            this.btnIn.Name = "btnIn";
-            this.btnIn.Size = new System.Drawing.Size(212, 63);
-            this.btnIn.TabIndex = 68;
-            this.btnIn.Text = "In";
-            this.btnIn.UseVisualStyleBackColor = false;
-            this.btnIn.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Red;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(995, 21);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(30, 30);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 68;
-            this.pictureBox3.TabStop = false;
-            // 
             // FrmKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2998,6 +3009,7 @@ namespace QLTKNH
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             this.panel25.ResumeLayout(false);
             this.panel25.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.grbGD.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGD)).EndInit();
             this.panel7.ResumeLayout(false);
@@ -3033,7 +3045,6 @@ namespace QLTKNH
             this.panel51.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBG)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoBG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

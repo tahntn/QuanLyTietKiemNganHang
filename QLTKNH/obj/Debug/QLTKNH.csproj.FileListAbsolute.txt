@@ -13,7 +13,6 @@ D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLT
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.FrmKhachHang.resources
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.csproj.CopyComplete
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.frmRegister.resources
-D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\obj\Debug\QLTKNH.Form1.resources
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\AxShockwaveFlashObjects.dll
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
 D:\source\repos\NotNet\Bài Tập Lớn\Quản Lý Tiết Kiệm Ngân Hàng\QLTKNH\QLTKNH\bin\Debug\CrystalDecisions.ReportSource.dll
